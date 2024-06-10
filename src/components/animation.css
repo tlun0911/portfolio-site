@@ -1,0 +1,66 @@
+/* Header */
+.large-header {
+	
+	width: 100%;
+	background: black;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: -1;
+}
+
+#landing {
+	position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+}
+
+#canvas1 {
+	
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+#content-bg {
+	height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.large-header {
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	overflow: hidden;
+}
+
+#canvas-2 {
+	overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+
+
+
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title {
+		font-size: 3em;
+	}
+}
