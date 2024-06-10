@@ -232,9 +232,9 @@ const Background2 = () => {
     }
   }, []);
   return (
-    <div id="content-bg">
-      <div id="large-header">
-        <canvas className="bg-black block" id="canvas-2"></canvas>
+    <div id="content-bg" className="min-w-full box-border">
+      <div id="large-header" className="min-w-full box-border">
+        <canvas className="bg-black block min-w-full box-border" id="canvas-2"></canvas>
       </div>
     </div>
   );

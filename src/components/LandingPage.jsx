@@ -3,14 +3,14 @@ import { useEffect, useRef } from "react";
 import { gsap, Circ } from "gsap";
 import { Link, Element } from "react-scroll";
 import Story from "./Story.jsx";
-// import "./LandingPage.css";
+
 import "./animation.css";
 
 const LandingPage = () => {
   useEffect(() => {
     var width,
       height,
-      largeHeader,
+      landing,
       canvas,
       ctx,
       points,
@@ -27,8 +27,9 @@ const LandingPage = () => {
       height = window.innerHeight;
       target = { x: width / 2, y: height / 2 };
 
-      largeHeader = document.getElementById("landing");
-      largeHeader.style.height = height + "px";
+      landing = document.getElementById("landing");
+      landing.style.height = height + "px";
+     
 
       canvas = document.getElementById("demo-canvas");
       canvas.width = width;
@@ -144,7 +145,7 @@ const LandingPage = () => {
     function resize() {
       width = window.innerWidth;
       height = window.innerHeight;
-      largeHeader.style.height = height + "px";
+      landing.style.height = height + "px";
       canvas.width = width;
       canvas.height = height;
     }
@@ -248,25 +249,17 @@ const LandingPage = () => {
     }
   }, []);
 
-  const h1Ref = useRef(null);
 
-  //   useEffect(() => {
 
-  //     gsap.fromTo(
-  //       h1Ref.current,
-  //       { x: -1200 },
-  //       { x: 0, duration: 1, ease: "sine.in", delay: 1}
-  //     );
-  //   }, []);
+
 
   return (
-    <div id="landing" className="bg-black h-screen w-full">
-      <div id="canvas1" className="flex justify-center items-center h-full">
-        <canvas className="z-0 absolute inset-0" id="demo-canvas"></canvas>
-        <div className="z-10">
+    <div id="landing" className="flex max-h-screen bg-black min-w-screen box-border">
+      <div id="canvas1" className="flex box-border justify-center h-screen min-w-screen items-center">
+        <canvas className="z-0 box-border absolute h-screen inset-0 min-w-screen" id="demo-canvas"></canvas>
+        <div className="z-10 flex flex-col justify-center h-screen items-center">
           <h1
-            ref={h1Ref}
-            className="text-white font-display text-6xl tracking-widest leading-relaxed text-center"
+            className="text-white font-display text-4xl md:text-6xl md:tracking-widest leading-relaxed text-center"
           >
             Hi there, I'm <span className="text-red-600">Tom!</span>
             <br />
