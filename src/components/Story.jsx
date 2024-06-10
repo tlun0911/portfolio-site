@@ -32,7 +32,7 @@ const Story = () => {
             </p>
             <div className="mt-6">
               <h4 className="text-xl font-medium text-white">
-                Skills & Interests:
+                
               </h4>
               <ul className="list-disc list-inside text-white mt-2">
                 <li>Skill or Interest 1</li>
