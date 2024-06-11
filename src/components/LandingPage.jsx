@@ -287,7 +287,7 @@ const LandingPage = () => {
       {
         opacity: 1,
         duration: 3,
-        ease: "power2.out",
+        ease: "power2.in",
       }
     );
     gsap.fromTo(
