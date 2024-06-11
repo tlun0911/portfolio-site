@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="flex box-border sticky content-center bg-gray-800 max-w-full text-white md:text-2xl py-4 z-50"
+      className="flex box-border sticky content-center bg-gray-800 min-w-screen text-white md:text-2xl py-4 z-50"
     >
       <div className="md:visible hidden md:flex md:justify-between md:mx-6">
         <div className="flex justify-between">
