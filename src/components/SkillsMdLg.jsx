@@ -1,24 +1,8 @@
 import { useState } from "react";
+import MdLgDisplay from "./MdLgDisplay";
 
 const SkillsMdLg = () => {
   const [skillList, setSkillList] = useState("");
-
-  const skills = {
-    python: "This is my python skill",
-    javascript: "This is my javascript skill",
-    react: "This is my react skill",
-    node: "This is my node skill",
-    express: "This is my express skill",
-    mongodb: "This is my mongodb skill",
-    bootstrap: "This is my bootstrap skill",
-    css: "This is my css skill",
-    html: "This is my html skill",
-    github: "This is my github skill",
-    django: "This is my django skill",
-    mysql: "This is my mysql skill",
-    docker: "This is my docker skill",
-    tailwind: "This is my tailwind skill",
-  };
 
   const handleMouseEnter = (skill) => {
     setSkillList(skill);
@@ -63,8 +47,8 @@ const SkillsMdLg = () => {
               y2="91.95"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#9013FE"></stop>
-              <stop offset="1" stop-color="#6610F2"></stop>
+              <stop stopColor="#9013FE"></stop>
+              <stop offset="1" stopColor="#6610F2"></stop>
             </linearGradient>
             <linearGradient
               id="c"
@@ -74,8 +58,8 @@ const SkillsMdLg = () => {
               y2="70.922"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#fff"></stop>
-              <stop offset="1" stop-color="#F1E5FC"></stop>
+              <stop stopColor="#fff"></stop>
+              <stop offset="1" stopColor="#F1E5FC"></stop>
             </linearGradient>
             <filter
               id="b"
@@ -83,10 +67,10 @@ const SkillsMdLg = () => {
               height="61.415"
               x="41.143"
               y="22.795"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
               filterUnits="userSpaceOnUse"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
               <feColorMatrix
                 in="SourceAlpha"
                 result="hardAlpha"
@@ -117,7 +101,7 @@ const SkillsMdLg = () => {
           height="75px"
           preserveAspectRatio="xMidYMid meet"
           className="border border-red-600 border-4 rounded-xl hover:ring-2 hover:ring-white"
-          onMouseEnter={() => handleMouseEnter("bootstrap")}
+          onMouseEnter={() => handleMouseEnter("css")}
         >
           <path
             fill="#1572B6"
@@ -155,8 +139,13 @@ const SkillsMdLg = () => {
         </svg>
       </div>
 
-      <div id="skill-list" className="col-span-3 row-span-3 text-white">
-        {skills[skillList]}
+      <div
+        id="skill-list"
+        className="col-span-3 row-span-4 text-white min-w-full bg-gray-800 ring-2 ring-red-600 rounded-lg"
+      >
+        <div className="block place-content-center p-4">
+        <MdLgDisplay skill={skillList} />
+        </div>
       </div>
 
       <div className="col-start-5" id="github">

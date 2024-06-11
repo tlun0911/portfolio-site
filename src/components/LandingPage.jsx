@@ -1,8 +1,7 @@
 import React from "react";
 import { useEffect, useRef } from "react";
 import { gsap, Circ } from "gsap";
-import { Link, Element } from "react-scroll";
-import Story from "./Story.jsx";
+import { FaCircleArrowDown } from "react-icons/fa6";
 
 import "./animation.css";
 
@@ -29,7 +28,6 @@ const LandingPage = () => {
 
       landing = document.getElementById("landing");
       landing.style.height = height + "px";
-     
 
       canvas = document.getElementById("demo-canvas");
       canvas.width = width;
@@ -249,23 +247,26 @@ const LandingPage = () => {
     }
   }, []);
 
-
-
-
-
   return (
-    <div id="landing" className="flex max-h-screen bg-black min-w-screen box-border">
-      <div id="canvas1" className="flex box-border justify-center h-screen min-w-screen items-center">
-        <canvas className="z-0 box-border absolute h-screen inset-0 min-w-screen" id="demo-canvas"></canvas>
+    <div
+      id="landing"
+      className="flex max-h-screen bg-black min-w-screen box-border"
+    >
+      <div
+        id="canvas1"
+        className="flex box-border justify-center h-screen min-w-screen items-center"
+      >
+        <canvas
+          className="z-0 box-border absolute h-screen inset-0 min-w-screen"
+          id="demo-canvas"
+        ></canvas>
         <div className="z-10 flex flex-col justify-center h-screen items-center">
-          <h1
-            className="text-white font-display text-4xl md:text-6xl md:tracking-widest leading-relaxed text-center"
-          >
+          <h1 className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center">
             Hi there, I'm <span className="text-red-600">Tom!</span>
             <br />
             Welcome to my site.
           </h1>
-          <div className="flex justify-center font-display">
+          <div className="block justify-center font-display">
             <a
               href="#story"
               type="button"
@@ -273,9 +274,8 @@ const LandingPage = () => {
             >
               Check Out My Story
             </a>
-
-
           </div>
+          <FaCircleArrowDown className="place-self-center text-red-600 text-4xl animate-bounce mt-10" />
         </div>
       </div>
     </div>
