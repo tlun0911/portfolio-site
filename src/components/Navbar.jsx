@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex justify-between">
           <div className="flex justify-start flex-grow">
             <SocialIcon
-              url="www.linkedin.com/in/thomas-lunt-cfi-37195098"
+              url="https://www.linkedin.com/in/thomas-lunt-cfi-37195098"
               className="mr-4 border border-white rounded-full hover:ring-2 hover:ring-white"
               target="_blank"
               fgColor="#fff"

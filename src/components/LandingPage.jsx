@@ -1,11 +1,16 @@
-import React from "react";
 import { useEffect, useRef } from "react";
-import { gsap, Circ } from "gsap";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import { FaCircleArrowDown } from "react-icons/fa6";
 
 import "./animation.css";
 
 const LandingPage = () => {
+  const heading1Ref = useRef(null);
+  const heading2Ref = useRef(null);
+  const buttonRef = useRef(null);
+  const iconRef = useRef(null);
+
   useEffect(() => {
     var width,
       height,
@@ -247,6 +252,57 @@ const LandingPage = () => {
     }
   }, []);
 
+  useGSAP(() => {
+    gsap.fromTo(
+      "#heading1",
+      {
+        x: -250,
+        duration: 2,
+        ease: "power1.in",
+      },
+      {
+        x: 0,
+        duration: 2,
+        ease: "power1.out",
+      }
+    );
+    gsap.fromTo(
+      "#heading2",
+      {
+        x: 250,
+        duration: 2,
+        ease: "power1.in",
+      },
+      {
+        x: 0,
+        duration: 2,
+        ease: "power1.out",
+      }
+    );
+    gsap.fromTo(
+      buttonRef.current,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 3,
+        ease: "power2.out",
+      }
+    );
+    gsap.fromTo(
+      iconRef.current,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 3,
+        ease: "power2.in",
+      }
+    );
+  }, []);
+
   return (
     <div
       id="landing"
@@ -261,21 +317,34 @@ const LandingPage = () => {
           id="demo-canvas"
         ></canvas>
         <div className="z-10 flex flex-col justify-center h-screen items-center">
-          <h1 className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center">
+          <h1
+            ref={heading1Ref}
+            id="heading1"
+            className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
+          >
             Hi there, I'm <span className="text-red-600">Tom!</span>
-            <br />
+          </h1>
+          <h1
+            ref={heading2Ref}
+            id="heading2"
+            className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
+          >
             Welcome to my site.
           </h1>
           <div className="block justify-center font-display">
             <a
+              ref={buttonRef}
               href="#story"
               type="button"
-              className="inline-block bg-black px-6 py-3 text-xl leading-relaxed font-bold border-4 border-red-600 rounded text-red-600 hover:ring-4 hover:ring-white  transition duration-300 ease-in-out mt-10"
+              className="inline-block bg-black px-6 py-3 text-xl leading-relaxed font-bold border-4 border-red-600 rounded text-red-600 hover:ring-4 hover:ring-white hover:bg-opacity-20 transition duration-300 ease-in-out mt-10"
             >
               Check Out My Story
             </a>
           </div>
-          <FaCircleArrowDown className="place-self-center text-red-600 text-4xl animate-bounce mt-10" />
+          <FaCircleArrowDown
+            className="place-self-center text-red-600 text-4xl animate-bounce mt-10"
+            ref={iconRef}
+          />
         </div>
       </div>
     </div>
