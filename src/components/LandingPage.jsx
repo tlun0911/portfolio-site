@@ -331,10 +331,12 @@ const LandingPage = () => {
           >
             Welcome to my site.
           </h1>
-          <div className="block justify-center font-display">
+          <div
+            className="block justify-center font-display"
+            ref={buttonRef}
+            id="button"
+          >
             <a
-              ref={buttonRef}
-              id="button"
               href="#story"
               type="button"
               className="inline-block bg-black px-6 py-3 text-xl leading-relaxed font-bold border-4 border-red-600 rounded text-red-600 hover:ring-4 hover:ring-white hover:bg-opacity-20 transition duration-300 ease-in-out mt-10"
