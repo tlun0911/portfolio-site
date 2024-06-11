@@ -280,7 +280,7 @@ const LandingPage = () => {
       }
     );
     gsap.fromTo(
-      buttonRef.current,
+      "#button",
       {
         opacity: 0,
       },
@@ -291,7 +291,7 @@ const LandingPage = () => {
       }
     );
     gsap.fromTo(
-      iconRef.current,
+      "#icon",
       {
         opacity: 0,
       },
@@ -334,6 +334,7 @@ const LandingPage = () => {
           <div className="block justify-center font-display">
             <a
               ref={buttonRef}
+              id="button"
               href="#story"
               type="button"
               className="inline-block bg-black px-6 py-3 text-xl leading-relaxed font-bold border-4 border-red-600 rounded text-red-600 hover:ring-4 hover:ring-white hover:bg-opacity-20 transition duration-300 ease-in-out mt-10"
@@ -343,6 +344,7 @@ const LandingPage = () => {
           </div>
           <FaCircleArrowDown
             className="place-self-center text-red-600 text-4xl animate-bounce mt-10"
+            id="icon"
             ref={iconRef}
           />
         </div>
