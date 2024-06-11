@@ -4,7 +4,6 @@
     overflow: hidden;
     text-align: center;
     position: relative;
-    transition: all 0.3s;
 }
 
 /* Sticky Navbar */
@@ -15,17 +14,3 @@
     z-index: 1000; /* Ensures it stays on top of other content */
 }
 
-#aboutme-link a.active {
-    color: orange;
-
-}
-
-#projects-link a.active {
-    color: orange;
-
-}
-
-#career-link a.active {
-    color: orange;
-
-}
