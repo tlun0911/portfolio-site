@@ -15,8 +15,8 @@ const Story = () => {
             <span className="text-red-600">software devepment</span>.
           </p>
         </div>
-        <div className="flex">
-          <div className="md:w-2/3 mt-8 md:mt-0 md:pl-10 items-center text-center">
+        <div className="container mx-auto px-6 md:px-12 lg:px-20">
+          <div className="text-center">
             <h3 className="text-2xl font-semibold text-white">
               How I Got Here
             </h3>

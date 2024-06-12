@@ -32,10 +32,16 @@ const MdLgDisplay = ({ skill }) => {
 
   return (
     <>
-      <h2 className="text-4xl font-semibold bg-clip-text bg-blend-normal bg-gradient-to-b from-red-600 to-white text-transparent pb-6 pt-4">
+      <h2
+        className="text-2xl md:text-4xl font-semibold bg-clip-text bg-blend-normal
+      bg-gradient-to-b from-red-600 to-white
+      text-transparent pb-2 md:pb-6 pt-2 md:pt-4"
+      >
         {skill.charAt(0).toUpperCase() + skill.slice(1)}
       </h2>
-      <p className="text-2xl text-white leading-loose">{skills[skill]}</p>
+      <p className="text-lg md:text-2xl text-white md:leading-loose pb-2">
+        {skills[skill]}
+      </p>
     </>
   );
 };

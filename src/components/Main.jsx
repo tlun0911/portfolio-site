@@ -21,7 +21,7 @@ const Main = () => {
       <section id="skills" className="font-landing relative">
         <h2 className="text-white text-3xl text-center mb-8">My Skills</h2>
         <div className="container w-3/5 mx-auto text-center">
-          <div className="grid grid-cols-3 gap-5 justify-items-center md:hidden">
+          <div className="grid grid-cols-3 grid-rows-9 gap-5 justify-items-center md:hidden">
             <SkillsSm />
           </div>
           <div className="hidden md:grid grid-cols-5 grid-rows-6 gap-5 justify-items-center">
