@@ -3,9 +3,8 @@ import Navbar from "./Navbar";
 import LandingPage from "./LandingPage";
 import Story from "./Story";
 import Background2 from "./Background2";
-import SkillsMdLg from "./SkillsMdLg";
+import Skills from "./Skills";
 import Projects from "./Projects";
-import SkillsSm from "./SkillsSm";
 
 const Main = () => {
   useEffect(() => {
@@ -18,14 +17,19 @@ const Main = () => {
       <Navbar />
       <Background2 />
       <Story />
-      <section id="skills" className="font-landing relative">
-        <h2 className="text-white text-3xl text-center mb-8">My Skills</h2>
-        <div className="container w-3/5 mx-auto text-center">
-          <div className="grid grid-cols-3 grid-rows-9 gap-5 justify-items-center md:hidden">
-            <SkillsSm />
-          </div>
-          <div className="hidden md:grid grid-cols-5 grid-rows-6 gap-5 justify-items-center">
-            <SkillsMdLg />
+      <section
+        id="skills"
+        className="md:w-1/2 mx-auto md:mt-32 pt-20 md:pt-40 font-landing relative flex-col justify-center items-center"
+      >
+        <h1 className="text-4xl text-white font-bold text-center">Skills</h1>
+        <p className="text-center text-white my-5 mx-3 md:pb-4 text-lg">
+          I have experience with several front and back-end technologies. Here
+          are a few of the frameworks and languages that I have worked with:
+          <br />
+        </p>
+        <div className="container mx-auto flex justify-center items-center">
+          <div className="grid grid-cols-3 gap-5 gap-x-5 md:grid-cols-4 flex justify-center items-center">
+            <Skills />
           </div>
         </div>
       </section>
