@@ -1,13 +1,9 @@
 import { SocialIcon } from "react-social-icons";
 import "./Navbar.css";
 
-
 const Navbar = () => {
   return (
-    <div
-      id="navbar"
-      className="flex box-border sticky content-center bg-gray-800 min-w-screen text-white md:text-2xl py-4 z-50"
-    >
+    <>
       <div className="md:visible hidden md:flex md:justify-between md:mx-6">
         <div className="flex justify-between">
           <div className="flex justify-start flex-grow">
@@ -43,11 +39,11 @@ const Navbar = () => {
         <a href="#skills" id="career-link" className="hover:text-red-600">
           Skills
         </a>
-        <a href="/" id="projects-link" className="hover:text-red-600">
+        <a href="#projects" id="projects-link" className="hover:text-red-600">
           Projects
         </a>
       </div>
-    </div>
+    </>
   );
 };
 

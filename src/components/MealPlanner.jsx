@@ -6,17 +6,12 @@ import mealPlannerImg3 from "../assets/Meal_planner/Meal_planner_mobile_1.png";
 import mealPlannerImg5 from "../assets/Meal_planner/Meal_planner_plan_detail.png";
 import mealPlannerImg4 from "../assets/Meal_planner/Meal_planner_plan_page.png";
 
-const Projects = () => {
+const MealPlanner = () => {
   return (
-    <section
-      id="projects"
-      className="relative mt-20 flex-col mx-auto items-center justify-center"
-    >
-      <h1 className="mb-4 text-white text-center text-4xl">Projects</h1>
-
-      <div className="flex flex-col px-4 mb-6 items-center justify-center">
-        <h3 className="text-white text-2xl mb-2">Meal Planner App</h3>
-        <p className="text-black text-lg bg-gray-400 mb-4 text-center border-2 border-red-600 rounded">
+    <div className="mb-10">
+      <div className="flex md:w-3/4 flex-col px-4 mb-6 mx-auto items-center justify-center bg-gray-400 border-2 border-red-600 rounded">
+        <h3 className="text-black font-bold text-2xl mb-2">Meal Planner App</h3>
+        <p className="text-black text-md md:text-lg text-center mb-4 ">
           The Meal Planner is a live full stack application for saving recipes
           and creating weekly meal plans. The backend API was build with
           NodeJS/Express and MongoDB was used for the database. The frontend was
@@ -24,10 +19,12 @@ const Projects = () => {
           the app is hosted on a free Render server and may take a few seconds
           to load!
         </p>
-        <a href="https://meal-planner-692u.onrender.com/" target="_blank">
-          <button className="border-2 border-red-600 text-red-600 px-4 py-2 mb-2 rounded">
-            View Project - Updates
-          </button>
+        <a
+          href="https://meal-planner-692u.onrender.com/"
+          target="_blank"
+          className="underline mb-1 font-bold hover:text-red-600"
+        >
+          Check it out here
         </a>
       </div>
 
@@ -36,7 +33,7 @@ const Projects = () => {
         arrows
         autoPlaySpeed={3000}
         centerMode={false}
-        className="flex items-center mx-auto"
+        className="flex items-center mx-auto md:w-4/5"
         containerClass="container"
         dotListClass=""
         draggable
@@ -82,7 +79,7 @@ const Projects = () => {
         swipeable
       >
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-2">Landing Page</h3>
+          <h3 className="text-white text-center text-2xl mb-4">Landing Page</h3>
           <img
             src={mealPlannerImg1}
             className=""
@@ -96,7 +93,7 @@ const Projects = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-2">
+          <h3 className="text-white text-center text-2xl mb-4">
             Meal Detail Page
           </h3>
           <img
@@ -112,7 +109,7 @@ const Projects = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-2">
+          <h3 className="text-white text-center text-2xl mb-4">
             Meal Plan Page
           </h3>
           <img
@@ -128,7 +125,7 @@ const Projects = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-2">
+          <h3 className="text-white text-center text-2xl mb-4">
             Meal Plan Detail Page
           </h3>
           <img
@@ -137,13 +134,13 @@ const Projects = () => {
             alt="Meal Planner"
             style={{
               display: "block",
-              
+
               margin: "auto",
             }}
           />
         </div>
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-2">
+          <h3 className="text-white text-center text-2xl mb-4">
             Meal Detail Page Mobile View
           </h3>
           <img
@@ -152,13 +149,12 @@ const Projects = () => {
             alt="Meal Planner"
             style={{
               display: "block",
-            
             }}
           />
         </div>
       </Carousel>
-    </section>
+    </div>
   );
 };
 
-export default Projects;
+export default MealPlanner;

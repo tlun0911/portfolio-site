@@ -305,51 +305,46 @@ const LandingPage = () => {
 
   return (
     <div
-      id="landing"
-      className="flex max-h-screen bg-black min-w-screen box-border"
+      id="canvas1"
+      className="flex box-border justify-center h-screen min-w-screen items-center"
     >
-      <div
-        id="canvas1"
-        className="flex box-border justify-center h-screen min-w-screen items-center"
-      >
-        <canvas
-          className="z-0 box-border absolute h-screen inset-0 min-w-screen"
-          id="demo-canvas"
-        ></canvas>
-        <div className="z-10 flex flex-col justify-center h-screen items-center">
-          <h1
-            ref={heading1Ref}
-            id="heading1"
-            className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
+      <canvas
+        className="z-0 box-border absolute h-screen inset-0 min-w-screen"
+        id="demo-canvas"
+      ></canvas>
+      <div className="z-10 flex flex-col justify-center h-screen items-center">
+        <h1
+          ref={heading1Ref}
+          id="heading1"
+          className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
+        >
+          Hi there, I'm <span className="text-red-600">Tom!</span>
+        </h1>
+        <h1
+          ref={heading2Ref}
+          id="heading2"
+          className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
+        >
+          Welcome to my site.
+        </h1>
+        <div
+          className="block justify-center font-display"
+          ref={buttonRef}
+          id="button"
+        >
+          <a
+            href="#story"
+            type="button"
+            className="inline-block bg-black px-6 py-3 text-xl leading-relaxed font-bold border-4 border-red-600 rounded text-red-600 hover:ring-4 hover:ring-white hover:bg-opacity-20 transition duration-300 ease-in-out mt-10"
           >
-            Hi there, I'm <span className="text-red-600">Tom!</span>
-          </h1>
-          <h1
-            ref={heading2Ref}
-            id="heading2"
-            className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
-          >
-            Welcome to my site.
-          </h1>
-          <div
-            className="block justify-center font-display"
-            ref={buttonRef}
-            id="button"
-          >
-            <a
-              href="#story"
-              type="button"
-              className="inline-block bg-black px-6 py-3 text-xl leading-relaxed font-bold border-4 border-red-600 rounded text-red-600 hover:ring-4 hover:ring-white hover:bg-opacity-20 transition duration-300 ease-in-out mt-10"
-            >
-              Check Out My Story
-            </a>
-          </div>
-          <FaCircleArrowDown
-            className="place-self-center text-red-600 text-4xl animate-bounce mt-10"
-            id="icon"
-            ref={iconRef}
-          />
+            Check Out My Story
+          </a>
         </div>
+        <FaCircleArrowDown
+          className="place-self-center text-red-600 text-4xl animate-bounce mt-10"
+          id="icon"
+          ref={iconRef}
+        />
       </div>
     </div>
   );
