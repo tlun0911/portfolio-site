@@ -26,7 +26,7 @@ const Projects = () => {
         </p>
         <a href="https://meal-planner-692u.onrender.com/" target="_blank">
           <button className="border-2 border-red-600 text-red-600 px-4 py-2 mb-2 rounded">
-            View Project
+            View Project - Updates
           </button>
         </a>
       </div>
