@@ -1,17 +1,17 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import carDealer1 from "../assets/Capstone/about_us.png"
-import carDealer2 from "../assets/Capstone/car models.png"
-import carDealer3 from "../assets/Capstone/cars.png"
-import carDealer4 from "../assets/Capstone/contact_us.png"
-import carDealer5 from "../assets/Capstone/dealersbystate.png"
-import carDealer6 from "../assets/Capstone/deployed_add_review.png"
-import carDealer7 from "../assets/Capstone/deployed_landingpage.png"
-import carDealer8 from "../assets/Capstone/get_dealers_loggedin.png"
+import carDealer1 from "../assets/Capstone/about_us.png";
+import carDealer2 from "../assets/Capstone/car models.png";
+import carDealer3 from "../assets/Capstone/cars.png";
+import carDealer4 from "../assets/Capstone/contact_us.png";
+import carDealer5 from "../assets/Capstone/dealersbystate.png";
+import carDealer6 from "../assets/Capstone/deployed_add_review.png";
+import carDealer7 from "../assets/Capstone/deployed_landingpage.png";
+import carDealer8 from "../assets/Capstone/get_dealers_loggedin.png";
 
 const Capstone = () => {
   return (
-    <div className="mb-10">
+    <div className="">
       <div className="flex md:w-3/4 flex-col px-4 mb-6 mx-auto items-center justify-center bg-gray-400 border-2 border-red-600 rounded">
         <h3 className="text-black font-bold text-2xl mb-2">Car Dealership</h3>
         <p className="text-black text-md md:text-lg text-center mb-4 ">
@@ -41,7 +41,7 @@ const Capstone = () => {
         draggable
         focusOnSelect={false}
         infinite
-        itemClass=""
+        itemClass="items-center justify-center"
         keyBoardControl
         minimumTouchDrag={80}
         pauseOnHover
@@ -81,117 +81,45 @@ const Capstone = () => {
         swipeable
       >
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">About Us Page</h3>
-          <img
-            src={carDealer1}
-            className=""
-            alt="Car Dealership"
-            style={{
-              display: "block",
-
-              margin: "auto",
-            }}
-          />
+          <h3 className="text-white text-center text-2xl ">About Us Page</h3>
+          <img src={carDealer1} className="md:scale-75" alt="Car Dealership" />
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
-            Car Models
-          </h3>
-          <img
-            src={carDealer2}
-            className=""
-            alt="Car Dealership"
-            style={{
-              display: "block",
-
-              margin: "auto",
-            }}
-          />
+          <h3 className="text-white text-center text-2xl">Car Models</h3>
+          <img src={carDealer2} className="md:scale-75" alt="Car Dealership" />
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
+          <h3 className="text-white text-center text-2xl">
             Django Cars Models
           </h3>
-          <img
-            src={carDealer3}
-            alt="Car Dealership"
-            style={{
-              display: "block",
-
-              margin: "auto",
-            }}
-          />
+          <img src={carDealer3} className="md:scale-75" alt="Car Dealership" />
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
-            Contact Us Page
-          </h3>
-          <img
-            src={carDealer4}
-            alt="Car Dealership"
-            style={{
-              display: "block",
+          <h3 className="text-white text-center text-2xl">Contact Us Page</h3>
+          <img src={carDealer4} className="md:scale-75" alt="Car Dealership" />
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <h3 className="text-white text-center text-2xl ">Dealers by State</h3>
+          <img src={carDealer5} className="md:scale-75" alt="Car Dealership" />
+        </div>
 
-              margin: "auto",
-            }}
-          />
-        </div>
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
-            Dealers by State
-          </h3>
-          <img
-            src={carDealer5}
-            className=""
-            alt="Car Dealership"
-            style={{
-              display: "block",
-            }}
-          />
+          <h3 className="text-white text-center text-2xl ">Add Review Page</h3>
+          <img src={carDealer6} className="md:scale-75" />
         </div>
-        
+
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
-            Add Review Page
-          </h3>
-          <img
-            src={carDealer6}
-            className=""
-            style={{
-              display: "block",
-            }}
-          />
+          <h3 className="text-white text-center text-2xl ">Landing Page</h3>
+          <img src={carDealer7} className="md:scale-75" />
         </div>
-        
+
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
-            Landing Page
-          </h3>
-          <img
-            src={carDealer7}
-            className=""
-            style={{
-              display: "block",
-            }}
-          />
+          <h3 className="text-white text-center text-2xl ">Get Dealers Page</h3>
+          <img src={carDealer8} className="md:scale-75" />
         </div>
-        
-        <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
-            Get Dealers Page
-          </h3>
-          <img
-            src={carDealer8}
-            className=""
-            style={{
-              display: "block",
-            }}
-          />
-        </div>
-        
       </Carousel>
     </div>
   );

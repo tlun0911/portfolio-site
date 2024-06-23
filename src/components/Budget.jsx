@@ -8,9 +8,9 @@ import budget5 from "../assets/Budget/currency_dropdown.png";
 
 const Budget = () => {
   return (
-    <div className="mb-10">
+    <div className="">
       <div className="flex md:w-3/4 flex-col px-4 mb-6 mx-auto items-center justify-center bg-gray-400 border-2 border-red-600 rounded">
-        <h3 className="text-black font-bold text-2xl mb-2">Budget App</h3>
+        <h3 className="text-black font-bold text-2xl mb-4">Budget App</h3>
         <p className="text-black text-md md:text-lg text-center mb-4 ">
           A budget app created with React and uses Context for state management.
           The app allows the user to input their budget and expenses. The app
@@ -77,78 +77,63 @@ const Budget = () => {
         slidesToSlide={1}
         swipeable
       >
-        <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
+        <div className="flex flex-col ">
+          <h3 className="text-white text-center text-2xl">
             Budget Main Screen
           </h3>
           <img
             src={budget1}
-            className=""
+            className="md:scale-75"
             alt="Car Dealership"
-            style={{
-              display: "block",
 
-              margin: "auto",
-            }}
           />
         </div>
 
-        <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
+        <div className="flex flex-col">
+          <h3 className="text-white text-center text-2xl">
             Budget Lower Than Spending Warning
           </h3>
           <img
             src={budget2}
-            className=""
+            className="md:scale-75"
             alt="Car Dealership"
-            style={{
-              display: "block",
 
-              margin: "auto",
-            }}
           />
         </div>
 
-        <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
+        <div className="flex flex-col">
+          <h3 className="text-white text-center text-2xl">
             Exceeding Budget Warning
           </h3>
           <img
             src={budget3}
+            className="md:scale-75"
             alt="Car Dealership"
-            style={{
-              display: "block",
 
-              margin: "auto",
-            }}
           />
         </div>
 
-        <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
+        <div className="flex flex-col">
+          <h3 className="text-white text-center text-2xl">
             Currency Change
           </h3>
           <img
             src={budget4}
+            className="md:scale-75"
             alt="Car Dealership"
-            style={{
-              display: "block",
 
-              margin: "auto",
-            }}
+            
           />
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <h3 className="text-white text-center text-2xl mb-4">
+        <div className="flex flex-col">
+          <h3 className="text-white text-center text-2xl">
             Currency Dropdown
           </h3>
           <img
             src={budget5}
-            className=""
+            className="md:scale-75"
             alt="Car Dealership"
-            style={{
-              display: "block",
-            }}
+
           />
         </div>
       </Carousel>

@@ -164,7 +164,7 @@ const Background2 = () => {
             points[i].circle.active = 0.5;
           } else if (Math.abs(getDistance(target, points[i])) < 500000) {
             points[i].active = 0.02;
-            points[i].circle.active = 0.5;
+            points[i].circle.active = 0.3;
           } else {
             points[i].active = 0;
             points[i].circle.active = 0.5;
@@ -234,7 +234,7 @@ const Background2 = () => {
   return (
 
       <div id="large-header" className="min-w-full box-border">
-        <canvas className="bg-black block min-w-full box-border" id="canvas-2"></canvas>
+        <canvas className="block min-w-full box-border" id="canvas-2"></canvas>
       </div>
 
   );

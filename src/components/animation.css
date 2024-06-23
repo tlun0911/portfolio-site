@@ -1,7 +1,7 @@
 /* Header */
 .large-header {
   
-  background: black;
+  background: rgb(22, 22, 22);
   overflow: clip;
   background-size: cover;
   background-position: center center;
@@ -14,6 +14,7 @@
   z-index: 999;
 }
 
+
 #canvas1 {
   position: absolute;
   top: 0;
@@ -23,12 +24,13 @@
 
 
 
-  background-color: black;
+  background-color: rgb(22, 22, 22);
   overflow: clip;
 }
 
+
 #content-bg {
-  
+  background: rgb(22, 22, 22);
   position: fixed;
   top: 0;
   transition: all 0.5s ease-out

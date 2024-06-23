@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { FaCircleArrowDown } from "react-icons/fa6";
@@ -30,6 +30,7 @@ const LandingPage = () => {
       width = window.innerWidth;
       height = window.innerHeight;
       target = { x: width / 2, y: height / 2 };
+      console.log(width, height);
 
       landing = document.getElementById("landing");
       landing.style.height = height + "px";
@@ -303,6 +304,10 @@ const LandingPage = () => {
     );
   }, []);
 
+  const ForwardedFaCircleArrowDown = React.forwardRef((props, ref) => (
+    <FaCircleArrowDown ref={ref} {...props} />
+  ));
+
   return (
     <div
       id="canvas1"
@@ -316,16 +321,16 @@ const LandingPage = () => {
         <h1
           ref={heading1Ref}
           id="heading1"
-          className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
+          className="text-red-600 leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
         >
-          Hi there, I'm <span className="text-red-600">Tom!</span>
+          Thomas Lunt
         </h1>
         <h1
           ref={heading2Ref}
           id="heading2"
-          className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
+          className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-4xl md:tracking-widest text-center"
         >
-          Welcome to my site.
+          Full Stack Developer <br />
         </h1>
         <div
           className="block justify-center font-display"
@@ -340,7 +345,7 @@ const LandingPage = () => {
             Check Out My Story
           </a>
         </div>
-        <FaCircleArrowDown
+        <ForwardedFaCircleArrowDown
           className="place-self-center text-red-600 text-4xl animate-bounce mt-10"
           id="icon"
           ref={iconRef}

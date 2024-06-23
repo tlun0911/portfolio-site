@@ -2,7 +2,7 @@ const Story = () => {
   return (
     <div className="container mx-auto px-6 md:px-12 lg:px-20">
       <div className="text-center mb-10 my-16">
-        <h2 className="text-4xl font-bold text-gray-200">My Story</h2>
+        <h2 className="text-4xl font-bold text-gray-200">About Me</h2>
         <p className="text-lg text-gray-200 mt-4">
           Hey there, welcome to my site! My name is Tom and I am an aspiring
           full stack developer. For the past 20 years, I've honed my skills and

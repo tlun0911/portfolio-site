@@ -21,16 +21,20 @@ const Main = () => {
       >
         <LandingPage />
       </section>
+
       <div
         id="navbar"
-        className="flex box-border sticky content-center bg-gray-800 min-w-screen text-white md:text-2xl py-4 z-50"
+        className="flex box-border sticky content-center bg-opacity-80 bg-gray-700 min-w-screen text-white md:text-2xl py-3 z-50"
       >
         <Navbar />
       </div>
       <div id="content-bg" className="min-w-full box-border">
-      <Background2 />
+        <Background2 />
       </div>
-      <section id="story" className="py-8 md:py-16 font-landing relative">
+      <section
+        id="story"
+        className="py-8 md:py-16 md:w-2/3 mx-auto font-landing relative"
+      >
         <Story />
       </section>
       <section
@@ -41,10 +45,12 @@ const Main = () => {
       </section>
       <section
         id="projects"
-        className="relative mt-15 pt-20 flex-col mx-auto items-center justify-center"
+        className="relative mt-15 pt-20 flex-col items-center justify-center"
       >
         <h1 className="mb-4 text-white text-center text-4xl">Projects</h1>
+
         <MealPlanner />
+
         <Capstone />
         <Budget />
       </section>
