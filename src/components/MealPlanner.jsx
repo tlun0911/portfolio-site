@@ -8,14 +8,14 @@ import mealPlannerImg4 from "../assets/Meal_planner/Meal_planner_plan_page.png";
 
 const MealPlanner = () => {
   return (
-    <div className="mb-10 flex flex-col md:flex-row items-center">
+    <div className="mb-10 flex flex-col md:justify-center md:flex-row items-center">
       <div
-        className="mx-4 p-6 mb-6 shadow-sm shadow-white
-       flex flex-col md:items-center md:w-2/5 bg-red-600
+        className="mx-4 p-6 shadow-sm shadow-white
+       flex flex-col md:items-center md:justify-center md:w-2/5 bg-black
         bg-opacity-20 bg-cover rounded-xl"
       >
-        <h3 className="text-white font-bold text-2xl mb-2">Meal Planner App</h3>
-        <p className="text-white text-md md:text-lg text-start mb-4 ">
+        <h3 className="text-white font-bold text-center md:text-start text-2xl mb-2">Meal Planner App</h3>
+        <p className="text-white text-md md:text-lg text-center md:text-start mb-4 ">
           The Meal Planner is a live full stack application for saving recipes
           and creating weekly meal plans. The backend API was build with
           NodeJS/Express and MongoDB was used for the database. The frontend was
@@ -26,7 +26,7 @@ const MealPlanner = () => {
         <a
           href="https://meal-planner-692u.onrender.com/"
           target="_blank"
-          className="text-white underline mb-1 font-bold hover:text-red-600"
+          className="text-white underline mb-1 font-bold text-center md:text-start hover:text-red-600"
         >
           Check it out here
         </a>

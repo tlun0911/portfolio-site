@@ -30,16 +30,16 @@ const Navbar = () => {
       </div>
 
       <div className="flex flex-grow justify-center md:justify-end space-x-4 mx-8 md:mx-7 items-center">
-        <a href="#landing" id="landing-link" className="hover:text-red-600">
+        <a href="#landing" id="landing-link" className="hover:text-red-600 hover:scale-110">
           Home
         </a>
-        <a href="#story" id="aboutme-link" className="hover:text-red-600">
+        <a href="#story" id="aboutme-link" className="hover:text-red-600 hover:scale-110">
           About Me
         </a>
-        <a href="#skills" id="career-link" className="hover:text-red-600">
+        <a href="#skills" id="career-link" className="hover:text-red-600 hover:scale-110">
           Skills
         </a>
-        <a href="#projects" id="projects-link" className="hover:text-red-600">
+        <a href="#projects" id="projects-link" className="hover:text-red-600 hover:scale-110">
           Projects
         </a>
       </div>
