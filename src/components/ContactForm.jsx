@@ -45,6 +45,9 @@ const ContactForm = () => {
   return (
     <div className="container w-11/12 md:w-2/3 mx-auto mb-8">
       <h1 className="mb-4 p-2 text-white text-center text-4xl">Contact</h1>
+        <p className="text-white text-center mb-4">
+            Have a question or want to work together? Send me a message!
+        </p>
 
       <form
         className="flex flex-col items-center justify-center 
@@ -56,7 +59,7 @@ const ContactForm = () => {
         <input
           type="text"
           name="user_name"
-          className="w-2/3 mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-2/3 mb-4 p-1 focus:outline-none focus:ring-2 focus:ring-red-500"
           value={formDetails.user_name}
           onChange={handleChange}
         />
@@ -65,7 +68,7 @@ const ContactForm = () => {
         <input
           type="email"
           name="user_email"
-          className="w-2/3 mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-2/3 mb-4 p-1 focus:outline-none focus:ring-2 focus:ring-red-500"
           value={formDetails.user_email}
           onChange={handleChange}
         />
@@ -74,7 +77,7 @@ const ContactForm = () => {
         <textarea
           name="message"
           rows="6"
-          className="w-2/3 mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-2/3 mb-4 p-1 focus:outline-none focus:ring-2 focus:ring-red-500"
           value={formDetails.message}
           onChange={handleChange}
         />
