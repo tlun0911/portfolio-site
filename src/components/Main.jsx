@@ -8,6 +8,7 @@ import MealPlanner from "./MealPlanner";
 import Capstone from "./Capstone";
 import Budget from "./Budget";
 import ContactForm from "./ContactForm";
+import Footer from "./Footer";
 
 const Main = () => {
   useEffect(() => {
@@ -55,10 +56,16 @@ const Main = () => {
       </section>
       <section
         id="contact"
-        className="relative mt-15 pt-20 flex-col items-center justify-center">
-        <h1 className="mb-4 text-white text-center text-4xl">Contact</h1>
+        className="relative flex-col mt-15 md:p-20 items-center justify-center"
+      >
         <ContactForm />
-        </section>
+      </section>
+      <section
+        id="end"
+        className="relative flex-col pt-20 place-content-center"
+      >
+        <Footer />
+      </section>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Budget = () => {
         bg-opacity-20 bg-cover rounded-xl"
       >
         {" "}
-        <h3 className="text-white font-bold text-center md:text-start text-2xl mb-2">
+        <h3 className="text-white font-bold bg-red-600 bg-clip-text text-center md:text-start text-2xl mb-2">
           Budget App
         </h3>
         <p className="text-white text-md md:text-lg text-center md:text-start mb-4 ">
@@ -45,7 +45,7 @@ const Budget = () => {
           draggable
           focusOnSelect={false}
           infinite
-          itemClass=""
+          itemClass="justify-center items-center my-auto"
           keyBoardControl
           minimumTouchDrag={80}
           pauseOnHover

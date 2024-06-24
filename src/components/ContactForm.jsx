@@ -16,7 +16,12 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("contact_service", "contact_form", e.target, 'yaWyunWk6MZdAVQlJ')
+      .sendForm(
+        "contact_service",
+        "contact_form",
+        e.target,
+        "yaWyunWk6MZdAVQlJ"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -30,32 +35,53 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label className="text-white">Name</label>
-      <input
-        type="text"
-        name="user_name"
-        value={formDetails.user_name}
-        onChange={handleChange}
-      />
+    <div className="container w-11/12 md:w-2/3 mx-auto mb-8">
+      <h1 className="mb-4 p-2 text-white text-center text-4xl">Contact</h1>
 
-      <label className="text-white">Email</label>
-      <input
-        type="email"
-        name="user_email"
-        value={formDetails.user_email}
-        onChange={handleChange}
-      />
+      <form
+        className="flex flex-col items-center justify-center 
+        content-stretch w-full border-2 
+        border-white p-4 bg-gray-800 bg-opacity-80 rounded-2xl"
+        onSubmit={handleSubmit}
+      >
+        <label className="text-white mb-2">Name</label>
+        <input
+          type="text"
+          name="user_name"
+          className="w-2/3 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+          value={formDetails.user_name}
+          onChange={handleChange}
+        />
 
-      <label className="text-white">Message</label>
-      <textarea
-        name="message"
-        value={formDetails.message}
-        onChange={handleChange}
-      />
+        <label className="text-white text-start mb-2">Email</label>
+        <input
+          type="email"
+          name="user_email"
+          className="w-2/3 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+          value={formDetails.user_email}
+          onChange={handleChange}
+        />
 
-      <button className='text-white' type="submit">Send</button>
-    </form>
+        <label className="text-white text-start mb-2">Message</label>
+        <textarea
+          name="message"
+          rows="6"
+          className="w-2/3 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+          value={formDetails.message}
+          onChange={handleChange}
+        />
+
+        <button
+          className="text-white border-2 border-white py-2 px-4 
+          rounded-2xl hover:border-red-600 
+          hover:text-red-600
+          hover:ring-2 hover:ring-white"
+          type="submit"
+        >
+          Send
+        </button>
+      </form>
+    </div>
   );
 };
 

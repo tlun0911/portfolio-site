@@ -47,7 +47,7 @@ const Capstone = () => {
           draggable
           focusOnSelect={false}
           infinite
-          itemClass="items-center justify-center"
+          itemClass="justify-center items-center my-auto"
           keyBoardControl
           minimumTouchDrag={80}
           pauseOnHover
@@ -86,7 +86,7 @@ const Capstone = () => {
           slidesToSlide={1}
           swipeable
         >
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col">
             <h3 className="text-white text-center text-2xl ">About Us Page</h3>
             <img
               src={carDealer1}
@@ -95,7 +95,7 @@ const Capstone = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col">
             <h3 className="text-white text-center text-2xl">Car Models</h3>
             <img
               src={carDealer2}
@@ -104,7 +104,7 @@ const Capstone = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col">
             <h3 className="text-white text-center text-2xl">
               Django Cars Models
             </h3>
@@ -115,7 +115,7 @@ const Capstone = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col">
             <h3 className="text-white text-center text-2xl">Contact Us Page</h3>
             <img
               src={carDealer4}
@@ -123,7 +123,7 @@ const Capstone = () => {
               alt="Car Dealership"
             />
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col">
             <h3 className="text-white text-center text-2xl ">
               Dealers by State
             </h3>
@@ -134,19 +134,19 @@ const Capstone = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col">
             <h3 className="text-white text-center text-2xl ">
               Add Review Page
             </h3>
             <img src={carDealer6} className="md:scale-75" />
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col">
             <h3 className="text-white text-center text-2xl ">Landing Page</h3>
             <img src={carDealer7} className="md:scale-75" />
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col">
             <h3 className="text-white text-center text-2xl ">
               Get Dealers Page
             </h3>
