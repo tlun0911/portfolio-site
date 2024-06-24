@@ -1,3 +1,5 @@
+import pdfFile from "../assets/cert.pdf";
+
 const Story = () => {
   return (
     <div className="container mx-auto px-6 md:px-12 lg:px-20">
@@ -21,11 +23,23 @@ const Story = () => {
             changing my major and graduated with a degree in criminal justice.
             Earlier this year, I was unforuntately laid off from my job and
             found myself at a crossroads. I decided to take the opportunity to
-            pursue my original passion and dive back into the tech world. I've
-            been pushing myself to learn new skills ever since, and I'm excited
-            to see where this journey takes me!
+            pursue my original passion and dive back into the tech world. I
+            enrolled in a certification program and earned a Full Stack
+            Developer certification from IBM. I've been pushing myself to learn
+            new skills ever since, and I'm excited to see where this journey
+            takes me!
           </p>
-          <div className="mt-6"></div>
+          <div className="mt-12">
+            <h3 className="text-2xl font-semibold text-white mb-4">
+              Certifications
+            </h3>
+            <object
+              type="application/pdf"
+              data={pdfFile}
+              width="100%"
+              height="500px"
+            />
+          </div>
         </div>
       </div>
     </div>

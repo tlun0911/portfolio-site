@@ -304,10 +304,6 @@ const LandingPage = () => {
     );
   }, []);
 
-  const ForwardedFaCircleArrowDown = React.forwardRef((props, ref) => (
-    <FaCircleArrowDown ref={ref} {...props} />
-  ));
-
   return (
     <div
       id="canvas1"
@@ -344,12 +340,13 @@ const LandingPage = () => {
           >
             Check Out My Story
           </a>
+          <div className="flex justify-center">
+            <FaCircleArrowDown
+              className="justify-center text-red-600 text-4xl animate-bounce mt-10"
+              id="icon"
+            />
+          </div>
         </div>
-        <ForwardedFaCircleArrowDown
-          className="place-self-center text-red-600 text-4xl animate-bounce mt-10"
-          id="icon"
-          ref={iconRef}
-        />
       </div>
     </div>
   );
