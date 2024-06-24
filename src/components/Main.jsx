@@ -9,6 +9,8 @@ import Capstone from "./Capstone";
 import Budget from "./Budget";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Main = () => {
   useEffect(() => {
@@ -66,6 +68,7 @@ const Main = () => {
       >
         <Footer />
       </section>
+      <ToastContainer />
     </div>
   );
 };

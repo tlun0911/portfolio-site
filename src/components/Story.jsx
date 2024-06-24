@@ -1,4 +1,4 @@
-import pdfFile from "../assets/cert.pdf";
+import cert from "../assets/cert.png";
 
 const Story = () => {
   return (
@@ -33,12 +33,13 @@ const Story = () => {
             <h3 className="text-2xl font-semibold text-white mb-4">
               Certifications
             </h3>
-            <object
-              type="application/pdf"
-              data={pdfFile}
-              width="100%"
-              height="500px"
-            />
+            <img src={cert} alt="Full Stack Developer Certification"
+            className="hover:" />
+            <a href="https://coursera.org/verify/MX7VBZB3UD9C" 
+            className="text-white block text-xl underline mt-4 hover:text-red-600"
+            target="_blank">
+              Verify Certificate
+            </a>
           </div>
         </div>
       </div>

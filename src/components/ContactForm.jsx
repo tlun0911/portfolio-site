@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
@@ -25,11 +26,18 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          // Reset form or show a success message
+          toast.success("Message sent successfully!");
+          setFormDetails({
+            user_name: "",
+            user_email: "",
+            message: "",
+          });
         },
         (error) => {
           console.log(error.text);
-          // Handle errors here
+          toast.error(
+            "There was an error sending your message. Please try again later."
+          );
         }
       );
   };
@@ -40,7 +48,7 @@ const ContactForm = () => {
 
       <form
         className="flex flex-col items-center justify-center 
-        content-stretch w-full border-2 
+        content-stretch w-full border-2 font-landing
         border-white p-4 bg-gray-800 bg-opacity-80 rounded-2xl"
         onSubmit={handleSubmit}
       >
@@ -48,7 +56,7 @@ const ContactForm = () => {
         <input
           type="text"
           name="user_name"
-          className="w-2/3 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-2/3 mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
           value={formDetails.user_name}
           onChange={handleChange}
         />
@@ -57,7 +65,7 @@ const ContactForm = () => {
         <input
           type="email"
           name="user_email"
-          className="w-2/3 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-2/3 mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
           value={formDetails.user_email}
           onChange={handleChange}
         />
@@ -66,7 +74,7 @@ const ContactForm = () => {
         <textarea
           name="message"
           rows="6"
-          className="w-2/3 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-2/3 mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
           value={formDetails.message}
           onChange={handleChange}
         />
