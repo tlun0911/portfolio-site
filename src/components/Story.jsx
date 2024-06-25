@@ -12,7 +12,7 @@ const Story = () => {
           experience has given me a deep understanding of problem-solving,
           attention to detail, and analytical thinking. Now, I'm channeling
           these skills into a new passion:{" "}
-          <span className="text-red-600">software devepment</span>.
+          <span className="text-red-600">software development</span>.
         </p>
       </div>
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
