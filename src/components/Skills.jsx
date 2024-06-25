@@ -1,8 +1,8 @@
 const Skills = () => {
   return (
     <>
-      <h1 className="text-4xl text-white font-bold text-center">Skills</h1>
-      <p className="text-center text-white my-5 mx-3 md:pb-4 text-lg">
+      <h1 className="text-4xl text-gray-200 font-bold text-center">Skills</h1>
+      <p className="text-center text-gray-200 my-5 mx-3 md:pb-4 text-lg">
         I have experience with several front and back-end technologies. Here are
         a few of the frameworks and languages that I have worked with:
         <br />

@@ -44,7 +44,7 @@ const ContactForm = () => {
 
   return (
     <div className="container w-11/12 md:w-2/3 mx-auto mb-8">
-      <h1 className="mb-4 p-2 text-white text-center text-4xl">Contact</h1>
+      <h1 className="mb-4 p-2 text-gray-200 text-center text-4xl">Contact</h1>
         <p className="text-white text-center mb-4">
             Have a question or want to work together? Send me a message!
         </p>
@@ -55,25 +55,27 @@ const ContactForm = () => {
         border-white p-4 bg-gray-800 bg-opacity-80 rounded-2xl"
         onSubmit={handleSubmit}
       >
-        <label className="text-white mb-2">Name</label>
+        <label htmlFor="user_name" className="text-gray-200 mb-2">Name</label>
         <input
           type="text"
+          id="user_name"
           name="user_name"
           className="w-2/3 mb-4 p-1 focus:outline-none focus:ring-2 focus:ring-red-500"
           value={formDetails.user_name}
           onChange={handleChange}
         />
 
-        <label className="text-white text-start mb-2">Email</label>
+        <label htmlFor="user_email" className="text-gray-200 text-start mb-2">Email</label>
         <input
           type="email"
+          id="user_email"
           name="user_email"
           className="w-2/3 mb-4 p-1 focus:outline-none focus:ring-2 focus:ring-red-500"
           value={formDetails.user_email}
           onChange={handleChange}
         />
 
-        <label className="text-white text-start mb-2">Message</label>
+        <label htmlFor="message" className="text-gray-200 text-start mb-2">Message</label>
         <textarea
           name="message"
           rows="6"

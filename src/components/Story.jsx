@@ -30,13 +30,13 @@ const Story = () => {
             takes me!
           </p>
           <div className="mt-12">
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-gray-200 mb-4">
               Certifications
             </h3>
             <img src={cert} alt="Full Stack Developer Certification"
             className="hover:" />
             <a href="https://coursera.org/verify/MX7VBZB3UD9C" 
-            className="text-white block text-xl underline mt-4 hover:text-red-600"
+            className="text-gray-200 block text-xl underline mt-4 hover:text-red-600"
             target="_blank">
               Verify Certificate
             </a>

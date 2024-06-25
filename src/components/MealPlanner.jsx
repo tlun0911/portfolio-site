@@ -14,8 +14,8 @@ const MealPlanner = () => {
        flex flex-col md:items-center md:justify-center md:w-2/5 bg-black
         bg-opacity-20 bg-cover rounded-xl"
       >
-        <h3 className="text-white font-bold text-center md:text-start text-2xl mb-2">Meal Planner App</h3>
-        <p className="text-white text-md md:text-lg text-center md:text-start mb-4 ">
+        <h3 className="text-gray-200 font-bold text-center md:text-start text-2xl mb-2">Meal Planner App</h3>
+        <p className="text-gray-200 text-md md:text-lg text-center md:text-start mb-4 ">
           The Meal Planner is a live full stack application for saving recipes
           and creating weekly meal plans. The backend API was build with
           NodeJS/Express and MongoDB was used for the database. The frontend was
@@ -26,7 +26,7 @@ const MealPlanner = () => {
         <a
           href="https://meal-planner-692u.onrender.com/"
           target="_blank"
-          className="text-white underline mb-1 font-bold text-center md:text-start hover:text-red-600"
+          className="text-gray-200 underline mb-1 font-bold text-center md:text-start hover:text-red-600"
         >
           Check it out here
         </a>
@@ -83,7 +83,7 @@ const MealPlanner = () => {
           swipeable
         >
           <div className="flex flex-col grow items-center">
-            <h3 className="text-white text-center text-2xl mb-4">
+            <h3 className="text-gray-200 text-center text-2xl mb-4">
               Landing Page
             </h3>
             <img
@@ -99,7 +99,7 @@ const MealPlanner = () => {
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <h3 className="text-white text-center text-2xl">
+            <h3 className="text-gray-200 text-center text-2xl">
               Meal Detail Page
             </h3>
             <img
@@ -115,7 +115,7 @@ const MealPlanner = () => {
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <h3 className="text-white text-center text-2xl">Meal Plan Page</h3>
+            <h3 className="text-gray-200 text-center text-2xl">Meal Plan Page</h3>
             <img
               src={mealPlannerImg4}
               className=""
@@ -129,7 +129,7 @@ const MealPlanner = () => {
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <h3 className="text-white text-center text-2xl">
+            <h3 className="text-gray-200 text-center text-2xl">
               Meal Plan Detail Page
             </h3>
             <img
@@ -144,7 +144,7 @@ const MealPlanner = () => {
             />
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h3 className="text-white text-center text-2xl mb-4">
+            <h3 className="text-gray-200 text-center text-2xl mb-4">
               Meal Detail Page Mobile View
             </h3>
             <img

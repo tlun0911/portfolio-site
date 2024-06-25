@@ -324,7 +324,7 @@ const LandingPage = () => {
         <h1
           ref={heading2Ref}
           id="heading2"
-          className="text-white leading-relaxed md:leading-relaxed font-display text-4xl md:text-4xl md:tracking-widest text-center"
+          className="text-gray-200 leading-relaxed md:leading-relaxed font-display text-4xl md:text-4xl md:tracking-widest text-center"
         >
           Full Stack Developer <br />
         </h1>

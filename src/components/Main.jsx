@@ -28,7 +28,7 @@ const Main = () => {
 
       <div
         id="navbar"
-        className="flex box-border sticky content-center bg-opacity-80 bg-gray-700 min-w-screen text-white md:text-2xl py-3 z-50"
+        className="flex box-border sticky content-center bg-opacity-80 bg-gray-700 min-w-screen text-gray-200 md:text-2xl py-3 z-50"
       >
         <Navbar />
       </div>
@@ -51,7 +51,7 @@ const Main = () => {
         id="projects"
         className="relative mt-15 pt-20 flex-col items-center justify-center"
       >
-        <h1 className="mb-4 text-white text-center text-4xl">Projects</h1>
+        <h1 className="mb-4 text-gray-200 text-center text-4xl">Projects</h1>
         <MealPlanner />
         <Capstone />
         <Budget />

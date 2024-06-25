@@ -17,10 +17,10 @@ const Capstone = () => {
        flex flex-col md:items-center md:justify-center md:w-2/5 bg-black
         bg-opacity-20 bg-cover rounded-xl"
       >
-        <h3 className="text-white font-bold text-center md:text-start text-2xl mb-2">
+        <h3 className="text-gray-200 font-bold text-center md:text-start text-2xl mb-2">
           Car Dealership
         </h3>
-        <p className="text-white text-md md:text-lg text-center md:text-start mb-4 ">
+        <p className="text-gray-200 text-md md:text-lg text-center md:text-start mb-4 ">
           Mock car dealership website with a frontend build with React. The
           backend is a django server that handles the user authentication and
           the car inventory. The dealership info and reviews are stored in a
@@ -30,7 +30,7 @@ const Capstone = () => {
         <a
           href="https://github.com/tlun0911/xrwvm-fullstack_developer_capstone"
           target="_blank"
-          className="text-white underline mb-1 font-bold text-center md:text-start hover:text-red-600"
+          className="text-gray-200 underline mb-1 font-bold text-center md:text-start hover:text-red-600"
         >
           Check it out here
         </a>
@@ -87,7 +87,7 @@ const Capstone = () => {
           swipeable
         >
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl ">About Us Page</h3>
+            <h3 className="text-gray-200 text-center text-2xl ">About Us Page</h3>
             <img
               src={carDealer1}
               className="md:scale-75"
@@ -96,7 +96,7 @@ const Capstone = () => {
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl">Car Models</h3>
+            <h3 className="text-gray-200 text-center text-2xl">Car Models</h3>
             <img
               src={carDealer2}
               className="md:scale-75"
@@ -105,7 +105,7 @@ const Capstone = () => {
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl">
+            <h3 className="text-gray-200 text-center text-2xl">
               Django Cars Models
             </h3>
             <img
@@ -116,7 +116,7 @@ const Capstone = () => {
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl">Contact Us Page</h3>
+            <h3 className="text-gray-200 text-center text-2xl">Contact Us Page</h3>
             <img
               src={carDealer4}
               className="md:scale-75"
@@ -124,7 +124,7 @@ const Capstone = () => {
             />
           </div>
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl ">
+            <h3 className="text-gray-200 text-center text-2xl ">
               Dealers by State
             </h3>
             <img
@@ -135,22 +135,22 @@ const Capstone = () => {
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl ">
+            <h3 className="text-gray-200 text-center text-2xl ">
               Add Review Page
             </h3>
-            <img src={carDealer6} className="md:scale-75" />
+            <img src={carDealer6} alt="Car Dealer 6" className="md:scale-75" />
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl ">Landing Page</h3>
-            <img src={carDealer7} className="md:scale-75" />
+            <h3 className="text-gray-200 text-center text-2xl ">Landing Page</h3>
+            <img src={carDealer7} alt="Car Dealer 7" className="md:scale-75" />
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl ">
+            <h3 className="text-gray-200 text-center text-2xl ">
               Get Dealers Page
             </h3>
-            <img src={carDealer8} className="md:scale-75" />
+            <img src={carDealer8} alt="Car Dealer 8" className="md:scale-75" />
           </div>
         </Carousel>
       </div>

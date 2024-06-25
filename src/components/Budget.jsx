@@ -15,10 +15,10 @@ const Budget = () => {
         bg-opacity-20 bg-cover rounded-xl"
       >
         {" "}
-        <h3 className="text-white font-bold bg-red-600 bg-clip-text text-center md:text-start text-2xl mb-2">
+        <h3 className="text-gray-200 font-bold bg-red-600 bg-clip-text text-center md:text-start text-2xl mb-2">
           Budget App
         </h3>
-        <p className="text-white text-md md:text-lg text-center md:text-start mb-4 ">
+        <p className="text-gray-200 text-md md:text-lg text-center md:text-start mb-4 ">
           A budget app created with React and uses Context for state management.
           The app allows the user to input their budget and expenses. The app
           will provide warnings for if their spending exceeds the budget or if
@@ -28,7 +28,7 @@ const Budget = () => {
         <a
           href="https://github.com/tlun0911/ejtos-react_budget_app"
           target="_blank"
-          className="text-white underline mb-1 font-bold text-center md:text-start hover:text-red-600"
+          className="text-gray-200 underline mb-1 font-bold text-center md:text-start hover:text-red-600"
         >
           Check it out here
         </a>
@@ -85,32 +85,32 @@ const Budget = () => {
           swipeable
         >
           <div className="flex flex-col ">
-            <h3 className="text-white text-center text-2xl">
+            <h3 className="text-gray-200 text-center text-2xl">
               Budget Main Screen
             </h3>
             <img src={budget1} className="md:scale-75" alt="Car Dealership" />
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl">
+            <h3 className="text-gray-200 text-center text-2xl">
               Budget Lower Than Spending Warning
             </h3>
             <img src={budget2} className="md:scale-75" alt="Car Dealership" />
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl">
+            <h3 className="text-gray-200 text-center text-2xl">
               Exceeding Budget Warning
             </h3>
             <img src={budget3} className="md:scale-75" alt="Car Dealership" />
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl">Currency Change</h3>
+            <h3 className="text-gray-200 text-center text-2xl">Currency Change</h3>
             <img src={budget4} className="md:scale-75" alt="Car Dealership" />
           </div>
           <div className="flex flex-col">
-            <h3 className="text-white text-center text-2xl">
+            <h3 className="text-gray-200 text-center text-2xl">
               Currency Dropdown
             </h3>
             <img src={budget5} className="md:scale-75" alt="Car Dealership" />
