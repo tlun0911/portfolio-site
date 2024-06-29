@@ -1,10 +1,21 @@
+import { useEffect } from "react";
 import cert from "../assets/cert.png";
 
+
 const Story = () => {
+
+
   return (
-    <div className="container mx-auto px-6 md:px-12 lg:px-20">
+    <div
+      className="container mx-auto px-6 md:px-12 lg:px-20"
+      id="about-me-heading"
+    >
       <div className="text-center mb-10 my-16">
-        <h2 className="text-4xl font-bold text-gray-200">About Me</h2>
+        <div id="about-me">
+          <h2 className="text-4xl font-bold text-gray-200" id="heading2">
+            About Me
+          </h2>
+        </div>
         <p className="text-lg text-gray-200 mt-4">
           Hey there, welcome to my site! My name is Tom and I am an aspiring
           full stack developer. For the past 20 years, I've honed my skills and
@@ -33,11 +44,16 @@ const Story = () => {
             <h3 className="text-2xl font-semibold text-gray-200 mb-4">
               Certifications
             </h3>
-            <img src={cert} alt="Full Stack Developer Certification"
-            className="hover:" />
-            <a href="https://coursera.org/verify/MX7VBZB3UD9C" 
-            className="text-gray-200 block text-xl underline mt-4 hover:text-red-600"
-            target="_blank">
+            <img
+              src={cert}
+              alt="Full Stack Developer Certification"
+              className="hover:"
+            />
+            <a
+              href="https://coursera.org/verify/MX7VBZB3UD9C"
+              className="text-gray-200 block text-xl underline mt-4 hover:text-red-600"
+              target="_blank"
+            >
               Verify Certificate
             </a>
           </div>

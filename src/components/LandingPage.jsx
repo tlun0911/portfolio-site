@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { FaCircleArrowDown } from "react-icons/fa6";
+import { SplitText } from "gsap/SplitText";
 
 import "./animation.css";
 
@@ -254,54 +255,39 @@ const LandingPage = () => {
   }, []);
 
   useGSAP(() => {
-    gsap.fromTo(
-      "#heading1",
-      {
-        x: -250,
-        duration: 2,
-        ease: "power1.in",
+    gsap.registerPlugin(SplitText);
+    let split;
+    let split2;
+    let animation = gsap.timeline({});
+
+    gsap.set("#wrapper", { autoAlpha: 1 });
+    split = new SplitText("#heading2", { type: "chars" });
+    split2 = new SplitText("#heading1", { type: "chars" });
+    animation.from(split2.chars, {
+      opacity: 0,
+      y: 50,
+      ease: "back(4)",
+      stagger: {
+        from: "center", //try "center" and "edges"
+        each: 0.05,
       },
-      {
-        x: 0,
-        duration: 2,
-        ease: "power1.in",
-      }
-    );
-    gsap.fromTo(
-      "#heading2",
-      {
-        x: 250,
-        duration: 2,
-        ease: "power1.in",
+    });
+    animation.from(split.chars, {
+      opacity: 0,
+      y: 50,
+      ease: "back(4)",
+      stagger: {
+        from: "start", //try "center" and "edges"
+        each: 0.05,
       },
-      {
-        x: 0,
-        duration: 2,
-        ease: "power1.in",
-      }
-    );
-    gsap.fromTo(
-      "#button",
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        duration: 3,
-        ease: "power2.in",
-      }
-    );
-    gsap.fromTo(
-      "#icon",
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        duration: 3,
-        ease: "power2.in",
-      }
-    );
+    });
+    animation.from("#button", {
+      opacity: 0,
+      scale: 0, // Start from a scaled down size
+      y: 50, // Original vertical position adjustment
+      ease: "power3.out",
+      duration: 1.5, // Adjust duration as needed for the desired effect
+    });
   }, []);
 
   return (
@@ -314,20 +300,22 @@ const LandingPage = () => {
         id="demo-canvas"
       ></canvas>
       <div className="z-10 flex flex-col justify-center h-screen items-center">
-        <h1
-          ref={heading1Ref}
-          id="heading1"
-          className="text-red-600 leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
-        >
-          Thomas Lunt
-        </h1>
-        <h1
-          ref={heading2Ref}
-          id="heading2"
-          className="text-gray-200 leading-relaxed md:leading-relaxed font-display text-4xl md:text-4xl md:tracking-widest text-center"
-        >
-          Full Stack Developer <br />
-        </h1>
+        <div id="wrapper">
+          <h1
+            ref={heading1Ref}
+            id="heading1"
+            className="text-red-600 leading-relaxed md:leading-relaxed font-display text-4xl md:text-6xl md:tracking-widest text-center"
+          >
+            Thomas Lunt
+          </h1>
+          <h1
+            ref={heading2Ref}
+            id="heading2"
+            className="text-gray-200 leading-relaxed md:leading-relaxed font-display text-4xl md:text-4xl md:tracking-widest text-center"
+          >
+            Full Stack Developer <br />
+          </h1>
+        </div>
         <div
           className="block justify-center font-display"
           ref={buttonRef}

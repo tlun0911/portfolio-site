@@ -7,22 +7,32 @@ const Skills = () => {
     // Ensure GSAP plugins are registered
     gsap.registerPlugin(ScrollTrigger);
 
-    // GSAP animation code for SVGs
-    gsap.fromTo(
-      "#skills svg",
-      { autoAlpha: 0, y: -50 }, // Initial state
-      {
-        autoAlpha: 1,
-        y: 0,
-        stagger: 0.2, // Stagger the animation of each SVG
-        scrollTrigger: {
-          trigger: "#bootstrap", // Trigger the animation when this element is in view
-          start: "top center+=100", // Adjust as needed
-          toggleActions: "play none none none",
-        },
-      }
-    );
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#skills-wrapper", // Trigger the animation when this element is in view
+        start: "top center+=100", // Adjust as needed
+        toggleActions: "play none none none",
+      },
+    });
 
+    // GSAP animation code for SVGs
+    gsap.utils.toArray("#skills-container svg").forEach((svg) => {
+      tl.fromTo(
+        svg,
+        { scale: 0 }, // Initial state
+        { scale: 1, duration: 0.2 } // Scale to 1
+      ).to(svg, {
+        scale: 1.1,
+        duration: 0.2,
+        yoyo: true,
+        repeat: 1, // Pulse effect
+      });
+    });
+
+    return () => {
+      // Kill all ScrollTriggers to prevent memory leaks
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
   }, []);
 
   return (
@@ -33,13 +43,16 @@ const Skills = () => {
         a few of the frameworks and languages that I have worked with:
         <br />
       </p>
-      <div className="container mx-auto flex justify-center items-center">
-        <div className="grid grid-cols-3 gap-5 gap-x-5 md:grid-cols-4 flex justify-center items-center"
-        >
+      <div
+        className="container mx-auto flex justify-center items-center"
+        id="skills-wrapper"
+      >
+        <div className="grid grid-cols-3 gap-5 gap-x-5 md:grid-cols-4 flex justify-center items-center">
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="bootstrap"
+            id="skills-container"
           >
+            <div>
             <svg
               viewBox="0 0 128 128"
               fill="white"
@@ -122,14 +135,16 @@ const Skills = () => {
                 </filter>
               </defs>
             </svg>
+
             <div className="text-white text-bold text-center pt-2">
               Bootstrap
+            </div>
             </div>
           </div>
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="css"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -149,7 +164,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="django"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -167,7 +182,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="express"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -184,7 +199,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="github"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -208,7 +223,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="html"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -228,7 +243,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="javascript"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -250,7 +265,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="mongodb"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -272,7 +287,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="mysql"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -292,7 +307,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="node"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -312,7 +327,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="python"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -342,7 +357,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
-            id="react"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -362,7 +377,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 md:col-start-2"
-            id="tailwind"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
@@ -384,7 +399,7 @@ const Skills = () => {
 
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 md:col-start-3"
-            id="docker"
+            id="skills-container"
           >
             <svg
               viewBox="0 0 128 128"
