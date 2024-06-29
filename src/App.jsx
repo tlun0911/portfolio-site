@@ -1,4 +1,3 @@
-
 import {
   Route,
   createBrowserRouter,
@@ -7,15 +6,9 @@ import {
 } from "react-router-dom";
 import Main from "./components/Main";
 
-
 function App() {
   const router = createBrowserRouter(
-    createRoutesFromElements(
-      
-        <Route path="/" element={<Main />} />
-        
-      
-    )
+    createRoutesFromElements(<Route path="/" element={<Main />} />)
   );
 
   return <RouterProvider router={router} />;
