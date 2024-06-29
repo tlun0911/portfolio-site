@@ -1,4 +1,30 @@
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+
 const Skills = () => {
+  useEffect(() => {
+    // Ensure GSAP plugins are registered
+    gsap.registerPlugin(ScrollTrigger);
+
+    // GSAP animation code for SVGs
+    gsap.fromTo(
+      "#skills svg",
+      { autoAlpha: 0, y: -50 }, // Initial state
+      {
+        autoAlpha: 1,
+        y: 0,
+        stagger: 0.2, // Stagger the animation of each SVG
+        scrollTrigger: {
+          trigger: "#bootstrap", // Trigger the animation when this element is in view
+          start: "top center+=100", // Adjust as needed
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+  }, []);
+
   return (
     <>
       <h1 className="text-4xl text-gray-200 font-bold text-center">Skills</h1>
@@ -8,7 +34,8 @@ const Skills = () => {
         <br />
       </p>
       <div className="container mx-auto flex justify-center items-center">
-        <div className="grid grid-cols-3 gap-5 gap-x-5 md:grid-cols-4 flex justify-center items-center">
+        <div className="grid grid-cols-3 gap-5 gap-x-5 md:grid-cols-4 flex justify-center items-center"
+        >
           <div
             className="col transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
             id="bootstrap"
