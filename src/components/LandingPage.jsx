@@ -268,7 +268,7 @@ const LandingPage = () => {
       y: 50,
       ease: "back(4)",
       stagger: {
-        from: "center", //try "center" and "edges"
+        from: "edges", //try "center" and "edges"
         each: 0.05,
       },
     });

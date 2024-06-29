@@ -20,10 +20,10 @@ const Skills = () => {
       tl.fromTo(
         svg,
         { scale: 0 }, // Initial state
-        { scale: 1, duration: 0.2 } // Scale to 1
+        { scale: 1, duration: 0.1 } // Scale to 1
       ).to(svg, {
         scale: 1.1,
-        duration: 0.2,
+        duration: 0.1,
         yoyo: true,
         repeat: 1, // Pulse effect
       });
