@@ -36,7 +36,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <>
+    <div className="relative">
       <h1 className="text-4xl text-gray-200 font-bold text-center">Skills</h1>
       <p className="text-center text-gray-200 my-5 mx-3 md:pb-4 text-lg">
         I have experience with several front and back-end technologies. Here are
@@ -418,7 +418,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

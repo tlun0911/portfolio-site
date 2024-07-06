@@ -9,6 +9,7 @@ const Story = () => {
     <div
       className="container mx-auto px-6 md:px-12 lg:px-20"
       id="about-me-heading"
+      
     >
       <div className="text-center mb-10 my-16">
         <div id="about-me">
