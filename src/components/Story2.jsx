@@ -110,10 +110,10 @@ const Story2 = () => {
   }, []);
 
   return (
-    <div id="about-me-container" className="relative flex flex-col md:min-h-screen">
+    <div id="about-me-container" className="relative flex flex-col md:min-h-full overflow-hidden ">
       <div id="about_me_divider" className="bg-red-600 w-4/5 h-1.5 mt-8 md:mt-24"></div>
       <div className="min-h-full relative">
-        <div className="container mx-auto px-6 md:px-12 lg:px-20 min-h-full">
+        <div className="container mx-auto px-6 md:px-12 lg:px-20 md:min-h-full">
           <h1
             className="text-3xl md:text-5xl text-gray-200 text-start mt-12 md:mt-24"
             id="aboutMeHeading"

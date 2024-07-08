@@ -45,23 +45,23 @@ const Personal = () => {
       })
       .to("#JL2", {
         duration: 0.3,
-        xPercent: -55,
-        yPercent: -35,
+        xPercent: -40,
+        yPercent: -33,
         scale: 0.75,
         rotate: -4,
         ease: "power2.in",
       })
-      .to("#JL1", {
-        duration: 0.3,
-        xPercent: 35,
-        yPercent: -38,
-        scale: 0.75,
-        rotate: 4,
-        ease: "power2.in",
-      })
       .to("#RL1", {
         duration: 0.3,
-        xPercent: -40,
+        xPercent: 35,
+        yPercent: -33,
+        scale: 0.75,
+        rotate: 3,
+        ease: "power2.in",
+      })
+      .to("#JL1", {
+        duration: 0.3,
+        xPercent: -30,
         yPercent: 34,
         scale: 0.75,
         rotate: -7,
@@ -80,13 +80,12 @@ const Personal = () => {
       >
         <p
           id="personal-heading"
-          className="text-start text-gray-200 text-lg md:text-xl leading-relaxed md:leading-loose"
+          className="text-start text-gray-200 text-lg py-4 md:text-xl leading-relaxed md:leading-loose"
         >
-          In my previous career, I was required to travel for work quite a bit.
-          I wanted something where I could be home more often to spend time with
-          my family, which one of the driving factors in my decision to pursue a
-          career in web development. I have always been interested in technology
-          and enjoy the problem-solving aspect of coding.
+          In my previous career, I had to travel a lot for work. I wanted
+          something where I could be home more often to spend time with my
+          family, which one of the driving factors in my decision to pursue a
+          career in web development.
         </p>
       </div>
       <div
@@ -104,7 +103,7 @@ const Personal = () => {
           src={JL1}
           alt="JL1"
           id="JL1"
-          className="absolute sm:scale-75 h-1/2 md:h-4/6 w-auto object-contain rounded-lg border-2 
+          className="absolute sm:scale-75 h-1/2 md:h-4/6 w-auto object-contain bg-left-bottom rounded-lg border-2 
           border-sky-400 -rotate-6"
         />
         <img

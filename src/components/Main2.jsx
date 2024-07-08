@@ -5,6 +5,8 @@ import AboutMe from "./AboutMe";
 import Story from "./Story";
 import Story2 from "./Story2";
 import Personal from "./Personal";
+import Cert from "./Cert";
+import Skills2 from "./Skills2";
 import Background2 from "./Background2";
 import Skills from "./Skills";
 import MealPlanner from "./MealPlanner";
@@ -28,13 +30,13 @@ const Main2 = () => {
       effects: true,
       smoothTouch: 0.1,
     });
-    ScrollTrigger.create({
-      trigger: "#about-me",
-      start: "top top",
-      end: "bottom 400px",
-      pin: "#about-me",
-      anticipatePin: 1,
-    });
+    // ScrollTrigger.create({
+    //   trigger: "#about-me",
+    //   start: "top top",
+    //   end: "bottom 400px",
+    //   pin: "#about-me",
+    //   anticipatePin: 1,
+    // });
   }, []);
   return (
     <div id="smooth-wrapper">
@@ -43,7 +45,10 @@ const Main2 = () => {
           <section id="landing" className="relative overflow-hidden">
             <LandingPage />
           </section>
-          <section id="about-me" className="relative min-h-screen w-screen mb-20">
+          <section
+            id="about-me"
+            className="relative min-h-screen w-screen mb-20"
+          >
             <Story2 />
           </section>
           <section id="resume" className="relative min-h-screen w-screen">
@@ -51,6 +56,12 @@ const Main2 = () => {
           </section>
           <section id="personal" className="relative min-h-screen w-screen">
             <Personal />
+          </section>
+          <section id="cert" className="relative min-h-screen w-screen">
+            <Cert />
+          </section>
+          <section id="skills" className="relative min-h-screen w-screen">
+            <Skills2 />
           </section>
         </div>
       </div>

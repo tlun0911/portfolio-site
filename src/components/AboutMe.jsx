@@ -97,12 +97,12 @@ const AboutMe = () => {
        min-h-screen heropattern-texture-stone-700 
        bg-clip-padding"
     >
-      <div className="row justify-self-end self-center md:pt-24 md:mr-52 md:ml-72">
+      <div className="row justify-self-end self-center px-4 md:pt-24 md:mr-52 md:ml-72">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
           id="svg1"
-          className="w-12 h-12 fill-red-600 float-left"
+          className="w-12 h-12 fill-red-600 float-left mr-6 mt-4"
         >
           <path
             id="handcuffs"
@@ -141,12 +141,12 @@ const AboutMe = () => {
           I spent the past 15 years in the retail industry as an investigator.
         </p>
       </div>
-      <div className="row justify-self-start self-center md:pb-24 md:ml-52 md:mr-72">
+      <div className="row justify-self-start self-center px-4 md:pb-24 md:ml-52 md:mr-72">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
           id="svg2"
-          className="w-12 h-12 stroke-red-600 fill-red-600 stroke-2 float-right"
+          className="w-12 h-12 stroke-red-600 fill-red-600 stroke-2 float-right mr-4 mt-4"
         >
           <path
             id="code"
