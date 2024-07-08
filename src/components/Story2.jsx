@@ -110,12 +110,18 @@ const Story2 = () => {
   }, []);
 
   return (
-    <div id="about-me-container" className="relative flex flex-col md:min-h-full overflow-hidden ">
-      <div id="about_me_divider" className="bg-red-600 w-4/5 h-1.5 mt-8 md:mt-24"></div>
-      <div className="min-h-full relative">
-        <div className="container mx-auto px-6 md:px-12 lg:px-20 md:min-h-full">
+    <div
+      id="about-me-container"
+      className="relative flex flex-col md:h-96 overflow-hidden "
+    >
+      <div className="relative">
+        <div
+          id="about_me_divider"
+          className="bg-red-600 w-4/5 h-1.5 mb-16"
+        ></div>
+        <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <h1
-            className="text-3xl md:text-5xl text-gray-200 text-start mt-12 md:mt-24"
+            className="text-3xl md:text-5xl text-gray-200 text-start"
             id="aboutMeHeading"
           >
             Hi, I'm Tom. I'm a{" "}
@@ -132,12 +138,12 @@ const Story2 = () => {
           </h1>
         </div>
       </div>
-      <div dir="rtl">
-      <div
-        id="end_about_me_divider"
-        className=" bg-red-600 w-4/5 h-1.5 mt-12 md:mt-24 mb-12 md:mb-24"
-      ></div>
-      </div>
+        <div dir="rtl">
+          <div
+            id="end_about_me_divider"
+            className=" bg-red-600 w-4/5 h-1.5 mt-16"
+          ></div>
+        </div>
     </div>
   );
 };

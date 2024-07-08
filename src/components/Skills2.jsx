@@ -13,7 +13,7 @@ const Skills2 = () => {
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: "#skills-container",
-        start: "top bottom",
+        start: "top center",
         end: "bottom top",
         toggleActions: "play none none none",
       },
@@ -21,7 +21,7 @@ const Skills2 = () => {
 
     t1.fromTo(
       "#skills-icons #path",
-      { drawSVG: "50% 50%", fillOpacity: 0 },
+      { delay: "0.75", drawSVG: "50% 50%", fillOpacity: 0 },
       { duration: 2, drawSVG: "100%", autoAlpha: 1 }
     ).add(() => {
       // Reveal the fill by setting fill-opacity to 1
