@@ -7,7 +7,6 @@ import Story2 from "./Story2";
 import Personal from "./Personal";
 import Cert from "./Cert";
 import Skills2 from "./Skills2";
-import Background2 from "./Background2";
 import Skills from "./Skills";
 import MealPlanner from "./MealPlanner";
 import Capstone from "./Capstone";
@@ -45,6 +44,7 @@ const Main2 = () => {
           <section id="landing" className="relative overflow-hidden">
             <LandingPage />
           </section>
+
           <section
             id="about-me"
             className="relative min-h-screen w-screen mb-20"

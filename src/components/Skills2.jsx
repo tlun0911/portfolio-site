@@ -21,8 +21,8 @@ const Skills2 = () => {
 
     t1.fromTo(
       "#skills-icons #path",
-      { delay: "0.75", drawSVG: "50% 50%", fillOpacity: 0 },
-      { duration: 2, drawSVG: "100%", autoAlpha: 1 }
+      { drawSVG: "50% 50%", fillOpacity: 0 },
+      { delay: 1.5, duration: 2, drawSVG: "100%", autoAlpha: 1 }
     ).add(() => {
       // Reveal the fill by setting fill-opacity to 1
       gsap.to("#path", { fillOpacity: 1, duration: 0.5 });
