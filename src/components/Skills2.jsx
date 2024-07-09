@@ -42,7 +42,7 @@ const Skills2 = () => {
           I have experience with the several technology stacks and frameworks
         </h1>
       </div>
-      <div className="flex w-11/12 md:w-1/2 bg-zinc-600 bg-opacity-50 rounded p-4 md:p-12 items-center justify-center">
+      <div className="flex w-11/12 md:w-1/2 bg-zinc-600 bg-opacity-80 rounded p-4 md:p-12 items-center justify-center">
         <div
           id="skills-icons"
           className="mt-4 grid gap-4 gap-y-12 md:gap-12 grid-cols-3 md:grid-cols-4"

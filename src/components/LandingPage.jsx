@@ -21,33 +21,33 @@ const LandingPage = () => {
     animation
       .fromTo(
         "#TLsvg path",
-        { drawSVG: "50% 50%",  fillOpacity: 0 },
+        { drawSVG: "50% 50%", fillOpacity: 0 },
         { delay: 2, duration: 2, drawSVG: "100%", autoAlpha: 1, stagger: 0.2 }
       )
       .add(() => {
         // Reveal the fill by setting fill-opacity to 1
-        gsap.to("#TLsvg path", { fillOpacity: 1, duration: 0.1, stagger: 0.05 });
+        gsap.to("#TLsvg path", {
+          fillOpacity: 1,
+          duration: 0.1,
+          stagger: 0.05,
+        });
       })
       .from(split2.chars, {
-        duration: 1.5,
+        duration: 1.2,
         opacity: 0,
         y: -100,
         ease: "bounce.out",
         stagger: 0.1,
       })
-      .from("#button", {
-        opacity: 0,
-        scale: 0, // Start from a scaled down size
-        y: 40, // Original vertical position adjustment
-        ease: "power3.out",
-        duration: 1.5, // Adjust duration as needed for the desired effect
-      });
+      .fromTo(
+        "#arrow_path",
+        { drawSVG: "0", fillOpacity: 0 },
+        { delay: 1, duration: 0.5, drawSVG: "100%", autoAlpha: 1 }
+      );
   }, []);
 
   return (
     <div className="h-full w-full">
-
-
       <div className="relative flex flex-col justify-center items-center h-screen z-0">
         <div id="wrapper" className="relative flex flex-col items-center">
           <div className="flex justify-center">
@@ -55,7 +55,7 @@ const LandingPage = () => {
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               width="500"
-              viewBox="0 100 375 120"
+              viewBox="0 100 354 120"
               height="200"
               preserveAspectRatio="xMinYMin meet"
               version="1.0"
@@ -193,34 +193,27 @@ const LandingPage = () => {
           </div>
           <h1
             id="heading2"
-            className="leading-relaxed text-gray-900 text-3xl md:text-5xl md:tracking-widest text-center"
+            className="leading-relaxed text-gray-900 text-3xl md:text-5xl mb-12 md:tracking-widest text-center"
           >
             Full Stack Developer
           </h1>
         </div>
-        <div className="block justify-center font-display" id="button">
-          <a
-            href="#about-me"
-            type="button"
-            className="inline-block bg-black px-6 
-              py-3 text-xl leading-relaxed
-              bg-opacity-50
-              font-bold border-4 border-red-600 rounded 
-              text-white hover:ring-4 hover:ring-gray-300 
-              hover:bg-opacity-20 hover:text-gray-300 transition 
-              duration-300 ease-in-out mt-10"
+        <div className="block justify-center font-display mt-8" id="button">
+          <svg
+            id="arrow_svg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            className="w-10 h-10 mx-auto animate-bounce"
           >
-            Check Out My Story
-          </a>
-          <div className="flex justify-center z-10" id="icon">
-            <a type="button" href="#about-me">
-              <FaCircleArrowDown
-                className="justify-center text-red-600
-               text-4xl hover:animation-pulse-ring
-               animate-bounce mt-10"
-              />
-            </a>
-          </div>
+            <path
+              id="arrow_path"
+              stroke="#111827"
+              fill="#111827"
+              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+            />
+          </svg>
         </div>
       </div>
     </div>

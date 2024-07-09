@@ -39,6 +39,7 @@ const AboutMe = () => {
     gsap.set("#para2", { perspective: 400 });
 
     t1.from(split.chars, {
+      delay: 0.5,
       duration: 0.8,
       opacity: 0,
       scale: 0,

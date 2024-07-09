@@ -27,7 +27,7 @@ const Main2 = () => {
     ScrollSmoother.create({
       smooth: 3,
       effects: true,
-      smoothTouch: 0.1,
+      smoothTouch: 0.5,
     });
     // ScrollTrigger.create({
     //   trigger: "#about-me",

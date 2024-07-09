@@ -102,8 +102,8 @@ const Story2 = () => {
 
     master
       .add(intro())
-      .add(middle(), "+=0.25")
-      .add(end(), "+=0.25")
+      .add(middle(), "+=0.5")
+      .add(end(), "+=0.5")
       .add(ending())
       .add(heading(), "+=0.25")
       .add(endHeader(), "<");

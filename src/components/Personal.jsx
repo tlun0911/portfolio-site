@@ -80,7 +80,7 @@ const Personal = () => {
       >
         <p
           id="personal-heading"
-          className="text-start text-gray-900 text-lg py-4 md:text-xl font-semibold leading-relaxed md:leading-loose"
+          className="text-start text-gray-900 text-lg py-4 md:text-2xl font-semibold leading-relaxed md:leading-loose"
         >
           In my previous career, I had to travel a lot for work. I wanted
           something where I could be home more often to spend time with my
