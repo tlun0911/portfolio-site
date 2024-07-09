@@ -4,7 +4,6 @@ import Main from "./components/Main";
 import Main2 from "./components/Main2";
 
 function App() {
-
   return (
     <div className="App">
       <video
@@ -12,7 +11,7 @@ function App() {
         muted
         loop
         id="myVideo"
-        className="-z-10 fixed top-0 left-0 object-none min-w-full min-h-full"
+        className="-z-10 fixed top-0 left-0 object-none min-w-full min-h-dvh"
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
