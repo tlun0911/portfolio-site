@@ -97,7 +97,7 @@ const AboutMe = () => {
        min-h-screen heropattern-texture-stone-700 
        bg-clip-padding"
     >
-      <div className="row justify-self-end self-center px-4 md:pt-24 md:mr-52 md:ml-72">
+      <div className="row justify-self-end self-center px-4 pt-12 md:pt-24 md:mr-52 md:ml-72">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
@@ -136,12 +136,12 @@ const AboutMe = () => {
         </svg>
         <p
           id="para1"
-          className="text-start text-gray-200 text-3xl leading-relaxed"
+          className="text-start text-gray-900 text-3xl leading-relaxed"
         >
           I spent the past 15 years in the retail industry as an investigator.
         </p>
       </div>
-      <div className="row justify-self-start self-center px-4 md:pb-24 md:ml-52 md:mr-72">
+      <div className="row justify-self-start self-center px-4 pb-12 md:pb-24 md:ml-52 md:mr-72">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
@@ -180,7 +180,7 @@ const AboutMe = () => {
         </svg>
         <p
           id="para2"
-          className="text-gray-200 text-3xl leading-relaxed justify-self-start"
+          className="text-gray-900 text-3xl leading-relaxed justify-self-start"
         >
           Now I have made the leap into the tech world developing applications.
         </p>

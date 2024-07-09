@@ -1,18 +1,24 @@
 import React, { useEffect } from "react";
-import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-} from "react-router-dom";
+import backgroundVideo from "./assets/background2.mp4";
 import Main from "./components/Main";
 import Main2 from "./components/Main2";
 
 function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(<Route path="/" element={<Main2 />} />)
-  );
 
-  return <RouterProvider router={router} />;
+  return (
+    <div className="App">
+      <video
+        autoPlay
+        muted
+        loop
+        id="myVideo"
+        className="-z-10 fixed top-0 left-0 object-none min-w-full min-h-full"
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
+
+      <Main2 />
+    </div>
+  );
 }
 export default App;

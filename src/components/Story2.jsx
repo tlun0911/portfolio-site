@@ -121,29 +121,29 @@ const Story2 = () => {
         ></div>
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <h1
-            className="text-3xl md:text-5xl text-gray-200 text-start"
+            className="text-3xl md:text-5xl text-gray-900 text-start"
             id="aboutMeHeading"
           >
             Hi, I'm Tom. I'm a{" "}
           </h1>{" "}
           <h1
             id="about_span"
-            className="text-center text-3xl md:text-5xl text-gray-200 mt-12"
+            className="text-center text-3xl md:text-5xl text-gray-900 mt-12"
           ></h1>
           <h1
             id="welcome_heading"
-            className="text-3xl md:text-5xl text-gray-200 text-start mt-12"
+            className="text-3xl md:text-5xl text-gray-900 text-start mt-12"
           >
             Welcome to my site
           </h1>
         </div>
       </div>
-        <div dir="rtl">
-          <div
-            id="end_about_me_divider"
-            className=" bg-red-600 w-4/5 h-1.5 mt-16"
-          ></div>
-        </div>
+      <div dir="rtl">
+        <div
+          id="end_about_me_divider"
+          className=" bg-red-600 w-4/5 h-1.5 mt-16"
+        ></div>
+      </div>
     </div>
   );
 };

@@ -40,14 +40,17 @@ const Main2 = () => {
   return (
     <div id="smooth-wrapper">
       <div id="smooth-content">
-        <div className="bg-zinc-900 min-h-screen w-full font-raleway">
-          <section id="landing" className="relative overflow-hidden">
+        <div className=" min-h-screen w-full font-raleway">
+          <section
+            id="landing"
+            className="relative min-h-screen w-screen overflow-hidden"
+          >
             <LandingPage />
           </section>
 
           <section
             id="about-me"
-            className="relative min-h-screen w-screen mb-20"
+            className="relative h-96 w-screen mb-20"
           >
             <Story2 />
           </section>

@@ -80,7 +80,7 @@ const Personal = () => {
       >
         <p
           id="personal-heading"
-          className="text-start text-gray-200 text-lg py-4 md:text-xl leading-relaxed md:leading-loose"
+          className="text-start text-gray-900 text-lg py-4 md:text-xl font-semibold leading-relaxed md:leading-loose"
         >
           In my previous career, I had to travel a lot for work. I wanted
           something where I could be home more often to spend time with my
@@ -97,28 +97,28 @@ const Personal = () => {
           alt="RL1"
           id="RL1"
           className="absolute sm:scale-75 h-1/2 md:h-4/6 w-auto object-contain rounded-lg border-2 
-          border-sky-400 rotate-6"
+          border-gray-900 rotate-6"
         />
         <img
           src={JL1}
           alt="JL1"
           id="JL1"
           className="absolute sm:scale-75 h-1/2 md:h-4/6 w-auto object-contain bg-left-bottom rounded-lg border-2 
-          border-sky-400 -rotate-6"
+          border-gray-900 -rotate-6"
         />
         <img
           src={JL2}
           alt="JL2"
           id="JL2"
           className="absolute sm:scale-75 h-1/2 md:h-4/6 w-auto object-contain rounded-lg border-2 
-          border-sky-400 rotate-12"
+          border-gray-900 rotate-12"
         />
         <img
           src={JL3}
           alt="JL3"
           id="JL3"
           className="absolute sm:scale-75 h-1/2 md:h-4/6 w-auto object-contain rounded-lg border-2 
-          border-sky-400"
+          border-gray-900"
         />
       </div>
     </div>

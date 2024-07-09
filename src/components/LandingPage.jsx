@@ -4,7 +4,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { useGSAP } from "@gsap/react";
 import { FaCircleArrowDown } from "react-icons/fa6";
 import { SplitText } from "gsap/SplitText";
-import backgroundVideo from "../assets/background.mp4";
+import backgroundVideo from "../assets/background2.mp4";
 
 const LandingPage = () => {
   useGSAP(() => {
@@ -21,12 +21,12 @@ const LandingPage = () => {
     animation
       .fromTo(
         "#TLsvg path",
-        { drawSVG: "0%", fillOpacity: 0 },
+        { drawSVG: "50% 50%",  fillOpacity: 0 },
         { delay: 2, duration: 2, drawSVG: "100%", autoAlpha: 1, stagger: 0.2 }
       )
       .add(() => {
         // Reveal the fill by setting fill-opacity to 1
-        gsap.to("#TLsvg path", { fillOpacity: 1, duration: 0.5 });
+        gsap.to("#TLsvg path", { fillOpacity: 1, duration: 0.1, stagger: 0.05 });
       })
       .from(split2.chars, {
         duration: 1.5,
@@ -45,16 +45,8 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div className="h-screen w-screen">
-      <video
-        autoPlay
-        muted
-        loop
-        id="myVideo"
-        className="-z-10 absolute top-0 left-0 object-cover"
-      >
-        <source src={backgroundVideo} type="video/mp4" />
-      </video>
+    <div className="h-full w-full">
+
 
       <div className="relative flex flex-col justify-center items-center h-screen z-0">
         <div id="wrapper" className="relative flex flex-col items-center">
