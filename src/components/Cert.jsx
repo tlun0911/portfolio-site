@@ -124,7 +124,7 @@ const Cert = () => {
           id="cert-button"
           href="https://coursera.org/verify/MX7VBZB3UD9C"
           target="_blank"
-          className="absolute top-1/2 left-1/2 w-4 h-12 transform 
+          className="absolute top-1/2 left-1/2  transform 
           -translate-x-1/2 -translate-y-1/2 w-44 h-12 
           bg-sky-800 text-gray-200 text-center rounded-md font-bold
           flex items-center justify-center ring-2 ring-gray-200 invisible"

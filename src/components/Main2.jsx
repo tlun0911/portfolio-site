@@ -9,6 +9,7 @@ import MealPlanner2 from "./MealPlanner2";
 import Capstone2 from "./Capstone2";
 import Budget2 from "./Budget2";
 import ContactForm from "./ContactForm";
+import Footer from "./Footer";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -39,10 +40,7 @@ const Main2 = () => {
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <div className="w-full font-raleway relative">
-          <section
-            id="landing"
-            className="relative h-screen w-screen mb-8 "
-          >
+          <section id="landing" className="relative h-screen w-screen mb-8 ">
             <LandingPage />
           </section>
 
@@ -72,6 +70,9 @@ const Main2 = () => {
           </section>
           <section id="contact" className="relative min-h-dvh w-screen">
             <ContactForm />
+          </section>
+          <section id="footer" className="relative w-screen">
+            <Footer />
           </section>
           <ToastContainer />
         </div>
