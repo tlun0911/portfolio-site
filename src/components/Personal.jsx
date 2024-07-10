@@ -84,7 +84,7 @@ const Personal = () => {
         >
           In my previous career, I had to travel a lot for work. I wanted
           something where I could be home more often to spend time with my
-          family, which one of the driving factors in my decision to pursue a
+          family, which was one of the driving factors in my decision to pursue a
           career in web development.
         </p>
       </div>

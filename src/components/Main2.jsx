@@ -1,33 +1,31 @@
 import React, { useEffect } from "react";
-import Navbar from "./Navbar";
 import LandingPage from "./LandingPage";
 import AboutMe from "./AboutMe";
-import Story from "./Story";
 import Story2 from "./Story2";
 import Personal from "./Personal";
 import Cert from "./Cert";
 import Skills2 from "./Skills2";
-import Skills from "./Skills";
-import MealPlanner from "./MealPlanner";
-import Capstone from "./Capstone";
-import Budget from "./Budget";
+import MealPlanner2 from "./MealPlanner2";
+import Capstone2 from "./Capstone2";
+import Budget2 from "./Budget2";
 import ContactForm from "./ContactForm";
-import Footer from "./Footer";
-import { ToastContainer } from "react-toastify";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const Main2 = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
     ScrollSmoother.create({
-      smooth: 3,
+      smooth: 1,
+      content: "#smooth-content",
+      wrapper: "#smooth-wrapper",
       effects: true,
-      smoothTouch: 0.5,
+      smoothTouch: 0.1,
     });
     // ScrollTrigger.create({
     //   trigger: "#about-me",
@@ -40,7 +38,7 @@ const Main2 = () => {
   return (
     <div id="smooth-wrapper">
       <div id="smooth-content">
-        <div className=" min-h-screen w-full font-raleway">
+        <div className="w-full font-raleway">
           <section
             id="landing"
             className="relative min-h-screen w-screen overflow-hidden"
@@ -48,10 +46,7 @@ const Main2 = () => {
             <LandingPage />
           </section>
 
-          <section
-            id="about-me"
-            className="relative h-96 w-screen mb-20"
-          >
+          <section id="about-me" className="relative h-96 w-screen mb-20">
             <Story2 />
           </section>
           <section id="resume" className="relative min-h-screen w-screen">
@@ -66,6 +61,19 @@ const Main2 = () => {
           <section id="skills" className="relative min-h-screen w-screen">
             <Skills2 />
           </section>
+          <section id="meal-planner" className="relative w-screen mb-24">
+            <MealPlanner2 />
+          </section>
+          <section id="capstone" className="relative w-screen mb-24">
+            <Capstone2 />
+          </section>
+          <section id="budget" className="relative w-screen mb-24">
+            <Budget2 />
+          </section>
+          <section id="contact" className="relative min-h-screen w-screen">
+            <ContactForm />
+          </section>
+          <ToastContainer />
         </div>
       </div>
     </div>

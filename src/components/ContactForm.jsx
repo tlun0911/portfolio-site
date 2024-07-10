@@ -44,15 +44,15 @@ const ContactForm = () => {
 
   return (
     <div className="container w-11/12 md:w-2/3 mx-auto mb-8">
-      <h1 className="mb-4 p-2 text-gray-200 text-center text-4xl">Contact</h1>
-        <p className="text-white text-center mb-4">
+      <h1 className="mb-4 p-2 text-gray-900 text-center font-semibold text-4xl">Contact</h1>
+        <p className="text-gray-900 text-2xl font-semibold text-center mb-4">
             Have a question or want to work together? Send me a message!
         </p>
 
       <form
         className="flex flex-col items-center justify-center 
         content-stretch w-full border-2 font-landing
-        border-white p-4 bg-gray-800 bg-opacity-80 rounded-2xl"
+        border-gray-200 p-4 bg-slate-700 bg-opacity-80 rounded-2xl"
         onSubmit={handleSubmit}
       >
         <label htmlFor="user_name" className="text-gray-200 mb-2">Name</label>
@@ -85,10 +85,9 @@ const ContactForm = () => {
         />
 
         <button
-          className="text-white border-2 border-white py-2 px-4 
+          className="text-gray-200 border-2 border-gray-200 py-2 px-4 
           rounded-2xl hover:border-red-600 
-          hover:text-red-600
-          hover:ring-2 hover:ring-white"
+          hover:ring-2 hover:ring-gray-200"
           type="submit"
         >
           Send
