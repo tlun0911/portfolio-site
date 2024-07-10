@@ -100,7 +100,7 @@ const Cert = () => {
       >
         <h1
           id="cert-text"
-          className="text-gray-200 text-2xl md:text-3xl text-start overflow-hidden"
+          className="text-gray-200 text-balance text-2xl md:text-3xl text-start overflow-hidden"
         >
           I believe in continuous learning and self-improvement. That's why when
           I found myself at a crossroads earlier this year, I decided to take

@@ -20,7 +20,7 @@ const Personal = () => {
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: "#personal-heading",
-        start: "top bottom += 400",
+        start: "top center",
         toggleActions: "play none none none",
       },
     });
@@ -80,7 +80,7 @@ const Personal = () => {
       >
         <p
           id="personal-heading"
-          className="text-start text-gray-900 text-lg py-4 md:text-2xl font-semibold leading-relaxed md:leading-loose"
+          className="text-start text-balance text-gray-900 text-lg py-4 md:text-2xl font-semibold leading-relaxed md:leading-loose"
         >
           In my previous career, I had to travel a lot for work. I wanted
           something where I could be home more often to spend time with my

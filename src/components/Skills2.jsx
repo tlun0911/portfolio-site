@@ -39,7 +39,7 @@ const Skills2 = () => {
           id="skills-heading"
           className="text-gray-900 text-2xl px-4 md:text-3xl mb-8"
         >
-          I have experience with the several technology stacks and frameworks
+          I have experience with several technology stacks and frameworks
         </h1>
       </div>
       <div className="flex w-11/12 md:w-1/2 bg-zinc-600 bg-opacity-80 rounded p-4 md:p-12 items-center justify-center">

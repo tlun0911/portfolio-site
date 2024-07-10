@@ -21,11 +21,11 @@ const Main2 = () => {
     gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
     ScrollSmoother.create({
-      smooth: 1,
+      smooth: 1.5,
       content: "#smooth-content",
       wrapper: "#smooth-wrapper",
       effects: true,
-      smoothTouch: 0.1,
+      smoothTouch: 0.4,
     });
     // ScrollTrigger.create({
     //   trigger: "#about-me",
@@ -41,24 +41,24 @@ const Main2 = () => {
         <div className="w-full font-raleway">
           <section
             id="landing"
-            className="relative min-h-screen w-screen overflow-hidden"
+            className="relative min-h-dvh w-screen overflow-hidden"
           >
             <LandingPage />
           </section>
 
-          <section id="about-me" className="relative h-96 w-screen mb-20">
+          <section id="about-me" className="relative h-dvh w-screen mb-20">
             <Story2 />
           </section>
-          <section id="resume" className="relative min-h-screen w-screen">
+          <section id="resume" className="relative min-h-dvh w-screen">
             <AboutMe />
           </section>
-          <section id="personal" className="relative min-h-screen w-screen">
+          <section id="personal" className="relative min-h-dvh w-screen">
             <Personal />
           </section>
-          <section id="cert" className="relative min-h-screen w-screen">
+          <section id="cert" className="relative min-h-dvh w-screen">
             <Cert />
           </section>
-          <section id="skills" className="relative min-h-screen w-screen">
+          <section id="skills" className="relative min-h-dvh w-screen">
             <Skills2 />
           </section>
           <section id="meal-planner" className="relative w-screen mb-24">
@@ -70,7 +70,7 @@ const Main2 = () => {
           <section id="budget" className="relative w-screen mb-24">
             <Budget2 />
           </section>
-          <section id="contact" className="relative min-h-screen w-screen">
+          <section id="contact" className="relative min-h-dvh w-screen">
             <ContactForm />
           </section>
           <ToastContainer />
