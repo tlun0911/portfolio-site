@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import backgroundVideo from "./assets/background2.mp4";
-import Main from "./components/Main";
 import Main2 from "./components/Main2";
 
 function App() {

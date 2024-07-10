@@ -1,8 +1,3 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
-import { useGSAP } from "@gsap/react";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import DealerImg from "../assets/Capstone/deployed_landingpage.png";
 
 const Capstone2 = () => {

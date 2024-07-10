@@ -186,6 +186,7 @@ const AboutMe = () => {
           Now I have made the leap into the tech world developing applications.
         </p>
       </div>
+
     </div>
   );
 };

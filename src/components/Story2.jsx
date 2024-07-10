@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { TextPlugin } from "gsap/TextPlugin";
 
+
 const Story2 = () => {
   const headingText = ["Father", "Husband", "Sports Fanatic"];
 

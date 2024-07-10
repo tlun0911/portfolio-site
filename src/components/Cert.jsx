@@ -2,12 +2,14 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import { CSSPlugin } from "gsap/CSSPlugin";
 import cert from "../assets/cert.png";
 
 const Cert = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(CSSPlugin);
     let split;
     split = new SplitText("#cert-text", {
       type: "chars, words",
@@ -20,7 +22,7 @@ const Cert = () => {
     blurImg
       .to(certImg, {
         duration: 0.2,
-        filter: "blur(1px)",
+        filter: "blur(0.5px)",
       })
       .to("#cert-button", {
         duration: 0.3,
@@ -61,7 +63,7 @@ const Cert = () => {
     tl.from(
       split,
       tl.duration(),
-      { rotationY: 180, transformOrigin: "50% 75% 200", ease: "power2.out" },
+      { rotationY: "180", transformOrigin: "50%, 75%", ease: "power2.out" },
       0
     );
 
