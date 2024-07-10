@@ -4,7 +4,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { useGSAP } from "@gsap/react";
 import { FaCircleArrowDown } from "react-icons/fa6";
 import { SplitText } from "gsap/SplitText";
-import backgroundVideo from "../assets/background2.mp4";
+import { SocialIcon } from "react-social-icons";
 
 const LandingPage = () => {
   useGSAP(() => {
@@ -43,12 +43,18 @@ const LandingPage = () => {
         "#arrow_path",
         { drawSVG: "0", fillOpacity: 0 },
         { delay: 0.25, duration: 0.5, drawSVG: "100%", autoAlpha: 1 }
-      );
+      )
+      .from("#icons-container", {
+        duration: 1,
+        scale: 0.5, // Start from half size
+        autoAlpha: 0, // Start from fully transparent
+        ease: "bounce.out", // Use "bounce.out" for a bounce effect
+      }, "<");
   }, []);
 
   return (
     <div className="h-full w-full">
-      <div className="relative flex flex-col justify-center items-center h-screen z-0">
+      <div className="relative flex flex-col justify-center items-center min-h-screen z-0">
         <div id="wrapper" className="relative flex flex-col items-center">
           <div className="flex justify-center">
             <svg
@@ -214,6 +220,28 @@ const LandingPage = () => {
               d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
             />
           </svg>
+        </div>
+        <div id="icons-container" className="w-screen mt-auto mb-4">
+          <div className="self-end">
+            <SocialIcon
+              url="https://www.upwork.com/freelancers/~01c8e90f051d0a48bc?viewMode=1"
+              className="ml-4 mr-4 border border-gray-200 rounded-full hover:ring-2 hover:ring-gray-200 hover:scale-125"
+              target="_blank"
+              fgColor="#fff"
+            />
+            <SocialIcon
+              url="https://www.linkedin.com/in/thomas-lunt-cfi-37195098"
+              className="mr-4 border border-gray-200 rounded-full hover:ring-2 hover:ring-gray-200 hover:scale-125"
+              target="_blank"
+              fgColor="#fff"
+            />
+            <SocialIcon
+              url="https://github.com/tlun0911"
+              className="mr-4 border border-gray-200 rounded-full hover:ring-2 hover:ring-gray-200 hover:scale-125"
+              target="_blank"
+              fgColor="#fff"
+            />
+          </div>
         </div>
       </div>
     </div>
