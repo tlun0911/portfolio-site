@@ -223,8 +223,8 @@ const LandingPage = () => {
             />
           </svg>
         </div>
-        <div id="icons-container" className="w-screen mt-auto mb-4">
-          <div className="self-end">
+        <div id="icons-container" className="w-screen mt-auto">
+          <div className="self-end pb-12">
             <SocialIcon
               url="https://www.upwork.com/freelancers/~01c8e90f051d0a48bc?viewMode=1"
               className="ml-4 mr-4 border border-gray-200 rounded-full hover:ring-2 hover:ring-gray-200 hover:scale-125"

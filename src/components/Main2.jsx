@@ -41,7 +41,7 @@ const Main2 = () => {
         <div className="w-full font-raleway relative">
           <section
             id="landing"
-            className="relative min-h-dvh w-screen mb-8 overflow-hidden"
+            className="relative min-h-screen w-screen mb-8 overflow-hidden"
           >
             <LandingPage />
           </section>
