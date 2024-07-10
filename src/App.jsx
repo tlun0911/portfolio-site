@@ -10,7 +10,7 @@ function App() {
         muted
         loop
         id="myVideo"
-        className="-z-10 fixed top-0 left-0 object-none min-w-full min-h-dvh"
+        className="-z-10 fixed top-0 left-0 object-none min-w-screen min-h-screen"
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
