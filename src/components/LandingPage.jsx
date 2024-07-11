@@ -20,7 +20,7 @@ const LandingPage = () => {
       .fromTo(
         "#TLsvg path",
         { drawSVG: "0% 0%", fillOpacity: 0 },
-        { delay: 1, duration: 2, drawSVG: "100%", autoAlpha: 1, stagger: 0.2 }
+        { delay: 0.5, duration: 2, drawSVG: "100%", autoAlpha: 1, stagger: 0.2 }
       )
       .add(() => {
         // Reveal the fill by setting fill-opacity to 1
@@ -36,7 +36,7 @@ const LandingPage = () => {
         y: -100,
         ease: "bounce.out",
         stagger: 0.1,
-      })
+      }, "3.9")
       .fromTo(
         "#arrow_path",
         { drawSVG: "0", fillOpacity: 0 },
