@@ -57,7 +57,7 @@ const LandingPage = () => {
 
   return (
     <div className="relative flex flex-col justify-center h-full w-full items-center z-0">
-      <div id="wrapper" className="relative justify-center mt-auto">
+      <div id="wrapper" className="relative justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -210,7 +210,7 @@ const LandingPage = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          strokeWidth="1.5"
           className="w-10 h-10 mx-auto animate-bounce"
         >
           <path
@@ -220,28 +220,6 @@ const LandingPage = () => {
             d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
           />
         </svg>
-      </div>
-      <div id="icons-container" className="flex w-screen mb-12 mt-auto">
-        <div className="">
-        <SocialIcon
-          url="https://www.upwork.com/freelancers/~01c8e90f051d0a48bc?viewMode=1"
-          className="ml-4 mr-4 border border-gray-200 rounded-full hover:ring-2 hover:ring-gray-200 hover:scale-125"
-          target="_blank"
-          fgColor="#fff"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/in/thomas-lunt-cfi-37195098"
-          className="mr-4 border border-gray-200 rounded-full hover:ring-2 hover:ring-gray-200 hover:scale-125"
-          target="_blank"
-          fgColor="#fff"
-        />
-        <SocialIcon
-          url="https://github.com/tlun0911"
-          className="mr-4 border border-gray-200 rounded-full hover:ring-2 hover:ring-gray-200 hover:scale-125"
-          target="_blank"
-          fgColor="#fff"
-        />
-      </div>
       </div>
     </div>
   );

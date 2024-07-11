@@ -74,9 +74,9 @@ const Main2 = () => {
           <section id="footer" className="relative w-screen">
             <Footer />
           </section>
-          <ToastContainer />
         </div>
       </div>
+          <ToastContainer />
     </div>
   );
 };
