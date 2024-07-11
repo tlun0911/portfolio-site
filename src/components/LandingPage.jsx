@@ -42,16 +42,6 @@ const LandingPage = () => {
         "#arrow_path",
         { drawSVG: "0", fillOpacity: 0 },
         { delay: 0.25, duration: 0.5, drawSVG: "100%", autoAlpha: 1 }
-      )
-      .from(
-        "#icons-container",
-        {
-          duration: 1,
-          scale: 0.5, // Start from half size
-          autoAlpha: 0, // Start from fully transparent
-          ease: "bounce.out", // Use "bounce.out" for a bounce effect
-        },
-        "<"
       );
   }, []);
 
