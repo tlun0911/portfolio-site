@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
-import { SocialIcon } from "react-social-icons";
 
 const LandingPage = () => {
   useGSAP(() => {

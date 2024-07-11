@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import cert from "../assets/cert.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
