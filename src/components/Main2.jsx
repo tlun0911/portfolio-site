@@ -6,6 +6,7 @@ import Personal from "./Personal";
 import Cert from "./Cert";
 import Skills2 from "./Skills2";
 import MealPlanner2 from "./MealPlanner2";
+import WeatherApp from "./WeatherApp";
 import Capstone2 from "./Capstone2";
 import Budget2 from "./Budget2";
 import ContactForm from "./ContactForm";
@@ -55,6 +56,9 @@ const Main2 = () => {
           <section id="meal-planner" className="relative w-screen mb-24">
             <MealPlanner2 />
           </section>
+          <section id="weather-app" className="relative w-screen mb-24">
+            <WeatherApp />
+          </section>
           <section id="capstone" className="relative w-screen mb-24">
             <Capstone2 />
           </section>
@@ -62,7 +66,7 @@ const Main2 = () => {
             <Budget2 />
           </section>
           <section id="contact" className="relative min-h-dvh w-screen">
-              <ContactForm />
+            <ContactForm />
           </section>
           <section id="footer" className="relative w-screen">
             <Footer />
