@@ -26,15 +26,8 @@ const Main2 = () => {
       content: "#smooth-content",
       wrapper: "#smooth-wrapper",
       effects: true,
-      smoothTouch: 0.4,
+      normalizeScroll: true,
     });
-    // ScrollTrigger.create({
-    //   trigger: "#about-me",
-    //   start: "top top",
-    //   end: "bottom 400px",
-    //   pin: "#about-me",
-    //   anticipatePin: 1,
-    // });
   }, []);
   return (
     <div id="smooth-wrapper">
@@ -76,7 +69,7 @@ const Main2 = () => {
           </section>
         </div>
       </div>
-          <ToastContainer />
+      <ToastContainer />
     </div>
   );
 };

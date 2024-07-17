@@ -36,7 +36,7 @@ const LandingPage = () => {
         y: -100,
         ease: "bounce.out",
         stagger: 0.1,
-      }, "3.9")
+      }, "3.5")
       .fromTo(
         "#arrow_path",
         { drawSVG: "0", fillOpacity: 0 },
