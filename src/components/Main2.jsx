@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import LandingPage from "./LandingPage";
 import AboutMe from "./AboutMe";
 import Story2 from "./Story2";
@@ -8,7 +8,7 @@ import Skills2 from "./Skills2";
 import MealPlanner2 from "./MealPlanner2";
 import Capstone2 from "./Capstone2";
 import Budget2 from "./Budget2";
-import ContactForm from "./ContactForm";
+const ContactForm = React.lazy(() => import("./ContactForm"));
 import Footer from "./Footer";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -62,7 +62,9 @@ const Main2 = () => {
             <Budget2 />
           </section>
           <section id="contact" className="relative min-h-dvh w-screen">
-            <ContactForm />
+            <Suspense fallback={<div>Loading...</div>}>
+              <ContactForm />
+            </Suspense>
           </section>
           <section id="footer" className="relative w-screen">
             <Footer />
