@@ -1,4 +1,4 @@
-import DealerImg from "../assets/Capstone/deployed_landingpage.png";
+import DealerImg from "../assets/Capstone/deployed_landingpage.webp";
 
 const Capstone2 = () => {
   return (

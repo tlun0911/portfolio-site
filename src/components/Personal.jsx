@@ -2,10 +2,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
-import JL1 from "../assets/JL1.jpg";
-import JL2 from "../assets/JL2.jpg";
-import JL3 from "../assets/JL3.jpg";
-import RL1 from "../assets/RL1.jpg";
+import JL1 from "../assets/JL1.webp";
+import JL2 from "../assets/JL2.webp";
+import JL3 from "../assets/JL3.webp";
+import RL1 from "../assets/RL1.webp";
 
 const Personal = () => {
   useGSAP(() => {

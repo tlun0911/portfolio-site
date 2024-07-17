@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { CSSPlugin } from "gsap/CSSPlugin";
-import cert from "../assets/cert.png";
+import cert from "../assets/cert.webp";
 
 const Cert = () => {
   useGSAP(() => {
