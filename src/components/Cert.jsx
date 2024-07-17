@@ -10,9 +10,9 @@ const Cert = () => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(SplitText);
     gsap.registerPlugin(CSSPlugin);
-    let split;
-    split = new SplitText("#cert-text", {
-      type: "chars, words",
+    
+    const split = new SplitText("#cert-text", {
+      type: "lines",
     });
     const certImg = document.querySelector("#cert-img");
     const certButton = document.querySelector("#cert-button");
@@ -29,54 +29,21 @@ const Cert = () => {
         autoAlpha: 1,
       });
 
-    let tl = new gsap.timeline({
-        delay: 0.5,
+    split.lines.forEach((line) => {
+      gsap.from(line, {
         scrollTrigger: {
-          trigger: "#cert-container",
-          start: "top bottom",
-          toggleActions: "play none none none",
+          trigger: line,
+          start: "top bottom", // Start the animation when the top of the line hits the bottom of the viewport
+          end: "+=200", // End after 100 pixels of scrolling
+          scrub: true, // Smooth scrubbing
+          toggleActions: "play none none reverse",
         },
-      }),
-      numWords = split.words.length;
-
-    //prep the quote div for 3D goodness
-    gsap.set("#cert-heading-container", {
-      transformPerspective: 600,
-      perspective: 300,
-      transformStyle: "preserve-3d",
-      autoAlpha: 1,
+        y: 30, // Start 30 pixels below its final position
+        opacity: 0,
+        duration: 0.8,
+        ease: "power1.out",
+      });
     });
-
-    //intro sequence
-    for (var i = 0; i < numWords; i++) {
-      tl.from(
-        split.words[i],
-        1.5,
-        {
-          z: "random(-500, 300)",
-          opacity: 0,
-          rotationY: "random(-40, 40)",
-        },
-        Math.random() * 1.5
-      );
-    }
-    tl.from(
-      split,
-      tl.duration(),
-      { rotationY: "180", transformOrigin: "50%, 75%", ease: "power2.out" },
-      0
-    );
-
-    // t1.from(split.chars, {
-    //   duration: 0.8,
-    //   opacity: 0,
-    //   scale: 0,
-    //   y: 80,
-    //   rotationX: 180,
-    //   transformOrigin: "0% 50% -50",
-    //   ease: "back",
-    //   stagger: 0.01,
-    // });
 
     certImg.addEventListener("mouseenter", () => {
       blurImg.play();
