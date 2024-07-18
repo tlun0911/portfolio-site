@@ -2,7 +2,7 @@ import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
-    <div className="min-w-screen h-1/2 text-gray-200 text-center bg-opacity-80 bg-slate-700 py-16">
+    <div className="min-w-screen h-80 text-gray-200 text-center bg-opacity-80 bg-slate-700 py-16">
       <p className="text-xl text-gray-200 mb-8">&copy; 2024 Thomas Lunt</p>
       <SocialIcon
               url="https://www.linkedin.com/in/thomas-lunt-cfi-37195098"
