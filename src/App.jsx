@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundVideo from "./assets/Background2.webm";
+import backgroundVideo from "./assets/background2.mp4";
 import Main2 from "./components/Main2";
 
 function App() {
