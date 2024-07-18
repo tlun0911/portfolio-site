@@ -27,7 +27,6 @@ const Main2 = () => {
       content: "#smooth-content",
       wrapper: "#smooth-wrapper",
       effects: true,
-      normalizeScroll: true,
     });
   }, []);
   return (
